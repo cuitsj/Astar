@@ -1,0 +1,128 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May 16 12:18:03 2022
+# Process ID: 9796
+# Current directory: G:/01Astar/Asatr32x32/top_astargnps
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8576 G:\01Astar\Asatr32x32\top_astargnps\top_astargnps.xpr
+# Log file: G:/01Astar/Asatr32x32/top_astargnps/vivado.log
+# Journal file: G:/01Astar/Asatr32x32/top_astargnps\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name map_ram -dir g:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {map_ram} CONFIG.Write_Width_A {1} CONFIG.Write_Depth_A {4096} CONFIG.Read_Width_A {1} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {1} CONFIG.Read_Width_B {1} CONFIG.Register_PortA_Output_of_Memory_Primitives {false}] [get_ips map_ram]
+generate_target {instantiation_template} [get_files g:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sources_1/ip/map_ram/map_ram.xci]
+generate_target all [get_files  g:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sources_1/ip/map_ram/map_ram.xci]
+catch { config_ip_cache -export [get_ips -all map_ram] }
+export_ip_user_files -of_objects [get_files g:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sources_1/ip/map_ram/map_ram.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] g:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sources_1/ip/map_ram/map_ram.xci]
+launch_runs -jobs 4 map_ram_synth_1
+export_simulation -of_objects [get_files g:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sources_1/ip/map_ram/map_ram.xci] -directory G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sim_1/new/map_ram_tb.v w ]
+add_files -fileset sim_1 G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sim_1/new/map_ram_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top map_ram_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source map_ram_tb.tcl
+current_wave_config {Untitled 1}
+add_wave {{/map_ram_tb/your_instance_name/clka}} {{/map_ram_tb/your_instance_name/wea}} {{/map_ram_tb/your_instance_name/addra}} {{/map_ram_tb/your_instance_name/dina}} {{/map_ram_tb/your_instance_name/douta}} 
+restart
+run 100 ns
+run 100 ns
+restart
+run 100 ns
+run 100 ns
+save_wave_config {G:/01Astar/Asatr32x32/top_astargnps/map_ram_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse G:/01Astar/Asatr32x32/top_astargnps/map_ram_tb_behav.wcfg
+set_property xsim.view G:/01Astar/Asatr32x32/top_astargnps/map_ram_tb_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config G:/01Astar/Asatr32x32/top_astargnps/map_ram_tb_behav.wcfg
+source map_ram_tb.tcl
+restart
+run 100 ns
+run 100 ns
+close_sim
+launch_simulation
+open_wave_config G:/01Astar/Asatr32x32/top_astargnps/map_ram_tb_behav.wcfg
+source map_ram_tb.tcl
+run 100 ns
+save_wave_config {G:/01Astar/Asatr32x32/top_astargnps/map_ram_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config G:/01Astar/Asatr32x32/top_astargnps/map_ram_tb_behav.wcfg
+source map_ram_tb.tcl
+run 100 ns
+restart
+run 100 ns
+run 100 ns
+save_wave_config {G:/01Astar/Asatr32x32/top_astargnps/map_ram_tb_behav.wcfg}
+save_wave_config {G:/01Astar/Asatr32x32/top_astargnps/map_ram_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config G:/01Astar/Asatr32x32/top_astargnps/map_ram_tb_behav.wcfg
+source map_ram_tb.tcl
+run 100 ns
+restart
+run 100 ns
+run 100 ns
+set_property -dict [list CONFIG.Enable_A {Use_ENA_Pin}] [get_ips map_ram]
+generate_target all [get_files  g:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sources_1/ip/map_ram/map_ram.xci]
+catch { config_ip_cache -export [get_ips -all map_ram] }
+export_ip_user_files -of_objects [get_files g:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sources_1/ip/map_ram/map_ram.xci] -no_script -sync -force -quiet
+reset_run map_ram_synth_1
+launch_runs -jobs 4 map_ram_synth_1
+export_simulation -of_objects [get_files g:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sources_1/ip/map_ram/map_ram.xci] -directory G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim
+launch_simulation
+open_wave_config G:/01Astar/Asatr32x32/top_astargnps/map_ram_tb_behav.wcfg
+source map_ram_tb.tcl
+run 100 ns
+current_wave_config {map_ram_tb_behav.wcfg}
+add_wave {{/map_ram_tb/your_instance_name/ena}} 
+restart
+run 100 ns
+run 100 ns
+save_wave_config {G:/01Astar/Asatr32x32/top_astargnps/map_ram_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config G:/01Astar/Asatr32x32/top_astargnps/map_ram_tb_behav.wcfg
+source map_ram_tb.tcl
+run 100 ns
+close_sim
+launch_simulation
+open_wave_config G:/01Astar/Asatr32x32/top_astargnps/map_ram_tb_behav.wcfg
+source map_ram_tb.tcl
+restart
+run 100 ns
+run 100 ns
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name closelist -dir g:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {closelist} CONFIG.Write_Width_A {8} CONFIG.Write_Depth_A {4096} CONFIG.Read_Width_A {8} CONFIG.Write_Width_B {8} CONFIG.Read_Width_B {8} CONFIG.Register_PortA_Output_of_Memory_Primitives {false}] [get_ips closelist]
+generate_target {instantiation_template} [get_files g:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sources_1/ip/closelist/closelist.xci]
+generate_target all [get_files  g:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sources_1/ip/closelist/closelist.xci]
+catch { config_ip_cache -export [get_ips -all closelist] }
+export_ip_user_files -of_objects [get_files g:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sources_1/ip/closelist/closelist.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] g:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sources_1/ip/closelist/closelist.xci]
+launch_runs -jobs 4 closelist_synth_1
+export_simulation -of_objects [get_files g:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sources_1/ip/closelist/closelist.xci] -directory G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+close_sim

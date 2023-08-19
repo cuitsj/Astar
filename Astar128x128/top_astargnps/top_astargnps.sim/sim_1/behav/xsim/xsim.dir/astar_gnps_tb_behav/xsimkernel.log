@@ -1,0 +1,7 @@
+Running: xsim.dir/astar_gnps_tb_behav/xsimk.exe -simmode gui -wdb astar_gnps_tb_behav.wdb -simrunnum 0 -socket 5177
+Design successfully loaded
+Design Loading Memory Usage: 7652 KB (Peak: 7652 KB)
+Design Loading CPU Usage: 61 ms
+Simulation completed
+Simulation Memory Usage: 13604 KB (Peak: 13604 KB)
+Simulation CPU Usage: 1374 ms

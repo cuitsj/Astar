@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat May 14 20:32:52 2022
+# Process ID: 12004
+# Current directory: G:/00Astar/Asatr16x16/top_astargnps
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6160 G:\00Astar\Asatr16x16\top_astargnps\top_astargnps.xpr
+# Log file: G:/00Astar/Asatr16x16/top_astargnps/vivado.log
+# Journal file: G:/00Astar/Asatr16x16/top_astargnps\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/00Astar/Asatr16x16/top_astargnps/top_astargnps.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {G:/00Astar/Asatr16x16/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+set_property PROBES.FILE {G:/00Astar/Asatr16x16/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/00Astar/Asatr16x16/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {G:/00Astar/Asatr16x16/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/00Astar/Asatr16x16/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {G:/00Astar/Asatr16x16/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes astar_gnps_i/led0 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b0 [get_hw_probes astar_gnps_i/led0 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes astar_gnps_i/findpath_flag -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]]
+save_wave_config {G:/00Astar/Asatr16x16/top_astargnps/top_astargnps.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

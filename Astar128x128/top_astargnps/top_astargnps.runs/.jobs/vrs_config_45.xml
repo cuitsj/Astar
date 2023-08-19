@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="closeram8_synth_1" LaunchDir="G:/01Astar/Astar128x128/top_astargnps/top_astargnps.runs/closeram8_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="openram8_synth_1" LaunchDir="G:/01Astar/Astar128x128/top_astargnps/top_astargnps.runs/openram8_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="openram12_synth_1" LaunchDir="G:/01Astar/Astar128x128/top_astargnps/top_astargnps.runs/openram12_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="G:/01Astar/Astar128x128/top_astargnps/top_astargnps.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="closeram8_synth_1"/>
+		<Parent Id="openram8_synth_1"/>
+		<Parent Id="openram12_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="G:/01Astar/Astar128x128/top_astargnps/top_astargnps.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="closeram8_synth_1"/>
+		<Parent Id="openram8_synth_1"/>
+		<Parent Id="openram12_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

@@ -1,0 +1,15 @@
+G:/Astar/sim/astar_gnps.v {1 {vlog -work work -vopt -stats=none {G:\Astar\sim\astar_gnps.v}
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module astar_gnps
+
+Top level modules:
+	astar_gnps
+
+} {} {}} G:/Astar/sim/astar_gnps_tb.vt {1 {vlog -work work -vopt -stats=none G:/Astar/sim/astar_gnps_tb.vt
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module astar_gnps_tb
+
+Top level modules:
+	astar_gnps_tb
+
+} {} {}}

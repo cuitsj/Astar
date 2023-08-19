@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../top_astargnps.srcs/sources_1/ip/clk_wiz_0" \
+"../../../../top_astargnps.srcs/sources_1/ip/ila_astar/sim/ila_astar.v" \
+"../../../../top_astargnps.srcs/sources_1/ip/openram12/sim/openram12.v" \
+"../../../../top_astargnps.srcs/sources_1/ip/openram8/sim/openram8.v" \
+"../../../../top_astargnps.srcs/sources_1/ip/closeram8/sim/closeram8.v" \
+"../../../../top_astargnps.srcs/sources_1/ip/mapram1/sim/mapram1.v" \
+"../../../../top_astargnps.srcs/sources_1/new/astar_gnps.v" \
+"../../../../top_astargnps.srcs/sim_1/new/astar_gnps_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,140 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May 18 22:36:37 2022
+# Process ID: 12060
+# Current directory: G:/01Astar/Asatr32x32/top_astargnps
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent352 G:\01Astar\Asatr32x32\top_astargnps\top_astargnps.xpr
+# Log file: G:/01Astar/Asatr32x32/top_astargnps/vivado.log
+# Journal file: G:/01Astar/Asatr32x32/top_astargnps\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.xpr
+INFO: [Project 1-313] Project file moved from 'G:/01Astar/0basic_ram/top_astargnps' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 828.203 ; gain = 217.598
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 18 22:38:28 2022] Launched synth_1...
+Run output will be captured here: G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.runs/synth_1/runme.log
+[Wed May 18 22:38:28 2022] Launched impl_1...
+Run output will be captured here: G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.runs/impl_1/runme.log
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 18 22:44:40 2022] Launched impl_1...
+Run output will be captured here: G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249A14E25
+set_property PROGRAM.FILE {G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+set_property PROBES.FILE {G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7vx485t_0 and the probes file(s) G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx.
+The device design has 2 ILA core(s) and 0 VIO core(s). 1 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1911.184 ; gain = 40.539
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 22:51:41
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 22:52:00
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property CONTROL.TRIGGER_POSITION 1 [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 22:52:29
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 22:52:30
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 22:52:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 22:52:43
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_DATA_DEPTH {131072}] [get_ips ila_astar]
+generate_target all [get_files  G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_astar.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_astar'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_astar'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'g:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_astar_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_astar'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_astar'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_astar'...
+catch { config_ip_cache -export [get_ips -all ila_astar] }
+export_ip_user_files -of_objects [get_files G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_astar.xci] -no_script -sync -force -quiet
+reset_run ila_astar_synth_1
+launch_runs -jobs 4 ila_astar_synth_1
+[Wed May 18 22:53:33 2022] Launched ila_astar_synth_1...
+Run output will be captured here: G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.runs/ila_astar_synth_1/runme.log
+export_simulation -of_objects [get_files G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_astar.xci] -directory G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 18 22:53:54 2022] Launched ila_astar_synth_1, synth_1...
+Run output will be captured here:
+ila_astar_synth_1: G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.runs/ila_astar_synth_1/runme.log
+synth_1: G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.runs/synth_1/runme.log
+[Wed May 18 22:53:55 2022] Launched impl_1...
+Run output will be captured here: G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.runs/impl_1/runme.log
+set_property PROBES.FILE {G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 2019.531 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 23:05:04
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 23:05:15
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property CONTROL.TRIGGER_POSITION 20000 [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 23:05:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 23:05:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 23:06:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 23:06:08
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 18 23:08:36 2022...

@@ -1,0 +1,109 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat May 14 19:05:34 2022
+# Process ID: 4572
+# Current directory: G:/00Astar/Asatr16x16/top_astargnps
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3640 G:\00Astar\Asatr16x16\top_astargnps\top_astargnps.xpr
+# Log file: G:/00Astar/Asatr16x16/top_astargnps/vivado.log
+# Journal file: G:/00Astar/Asatr16x16/top_astargnps\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/00Astar/Asatr16x16/top_astargnps/top_astargnps.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:18 . Memory (MB): peak = 791.516 ; gain = 193.082
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat May 14 19:06:29 2022] Launched synth_1...
+Run output will be captured here: G:/00Astar/Asatr16x16/top_astargnps/top_astargnps.runs/synth_1/runme.log
+[Sat May 14 19:06:29 2022] Launched impl_1...
+Run output will be captured here: G:/00Astar/Asatr16x16/top_astargnps/top_astargnps.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sat May 14 19:07:20 2022] Launched synth_1...
+Run output will be captured here: G:/00Astar/Asatr16x16/top_astargnps/top_astargnps.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat May 14 19:07:39 2022] Launched synth_1...
+Run output will be captured here: G:/00Astar/Asatr16x16/top_astargnps/top_astargnps.runs/synth_1/runme.log
+[Sat May 14 19:07:40 2022] Launched impl_1...
+Run output will be captured here: G:/00Astar/Asatr16x16/top_astargnps/top_astargnps.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249A14E25
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1768.238 ; gain = 911.695
+set_property PROGRAM.FILE {G:/00Astar/Asatr16x16/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+set_property PROBES.FILE {G:/00Astar/Asatr16x16/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/00Astar/Asatr16x16/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-1434] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Labtools 27-3413] Dropping logic core with cellname:'astar_gnps_i/ila_0_i' at location 'uuid_560412768D2E5C1CBBE2E9EC2FC1612C' from probes file, since it cannot be found on the programmed device.
+set_property PROBES.FILE {G:/00Astar/Asatr16x16/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/00Astar/Asatr16x16/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {G:/00Astar/Asatr16x16/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1796.418 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-14 20:24:16
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-14 20:24:37
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes astar_gnps_i/led0 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-14 20:25:01
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-14 20:25:27
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-14 20:26:33
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-14 20:26:40
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-14 20:26:41
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-14 20:26:42
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-14 20:26:44
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-14 20:28:22
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-14 20:28:26
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-14 20:28:28
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes astar_gnps_i/findpath_flag -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-14 20:28:38
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-14 20:28:45
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-14 20:28:47
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-14 20:28:48
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_0_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-14 20:31:25
+save_wave_config {G:/00Astar/Asatr16x16/top_astargnps/top_astargnps.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May 14 20:32:24 2022...

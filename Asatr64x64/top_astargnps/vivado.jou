@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May 18 22:31:13 2022
+# Process ID: 6416
+# Current directory: G:/01Astar/Asatr64x64/top_astargnps
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5804 G:\01Astar\Asatr64x64\top_astargnps\top_astargnps.xpr
+# Log file: G:/01Astar/Asatr64x64/top_astargnps/vivado.log
+# Journal file: G:/01Astar/Asatr64x64/top_astargnps\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROBES.FILE {G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+write_hw_ila_data {G:\01Astar\Asatr64x64\iladata.ila} hw_ila_data_1
+save_wave_config {G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

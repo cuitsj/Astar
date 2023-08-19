@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="astar_gnps_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="astar_gnps_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="165229600000fs"></ZoomStartTime>
+      <ZoomEndTime time="166542600001fs"></ZoomEndTime>
+      <Cursor1Time time="163172600000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="223"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="214" />
+   <wave_markers>
+      <marker time="41290000000" label="" />
+      <marker time="163210000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/clk2" type="logic">
+      <obj_property name="ElementShortName">clk2</obj_property>
+      <obj_property name="ObjectShortName">clk2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/rxprocess_en" type="logic">
+      <obj_property name="ElementShortName">rxprocess_en</obj_property>
+      <obj_property name="ObjectShortName">rxprocess_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/rx_data" type="array">
+      <obj_property name="ElementShortName">rx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/tx_done" type="logic">
+      <obj_property name="ElementShortName">tx_done</obj_property>
+      <obj_property name="ObjectShortName">tx_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/tx_data" type="array">
+      <obj_property name="ElementShortName">tx_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/tx_flag" type="logic">
+      <obj_property name="ElementShortName">tx_flag</obj_property>
+      <obj_property name="ObjectShortName">tx_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/led0" type="logic">
+      <obj_property name="ElementShortName">led0</obj_property>
+      <obj_property name="ObjectShortName">led0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/led1" type="logic">
+      <obj_property name="ElementShortName">led1</obj_property>
+      <obj_property name="ObjectShortName">led1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/current_state" type="array">
+      <obj_property name="ElementShortName">current_state[4:0]</obj_property>
+      <obj_property name="ObjectShortName">current_state[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e1" type="logic">
+      <obj_property name="ElementShortName">e1</obj_property>
+      <obj_property name="ObjectShortName">e1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e2" type="logic">
+      <obj_property name="ElementShortName">e2</obj_property>
+      <obj_property name="ObjectShortName">e2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e3" type="logic">
+      <obj_property name="ElementShortName">e3</obj_property>
+      <obj_property name="ObjectShortName">e3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e4" type="logic">
+      <obj_property name="ElementShortName">e4</obj_property>
+      <obj_property name="ObjectShortName">e4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e5" type="logic">
+      <obj_property name="ElementShortName">e5</obj_property>
+      <obj_property name="ObjectShortName">e5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e6" type="logic">
+      <obj_property name="ElementShortName">e6</obj_property>
+      <obj_property name="ObjectShortName">e6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e7" type="logic">
+      <obj_property name="ElementShortName">e7</obj_property>
+      <obj_property name="ObjectShortName">e7</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e8" type="logic">
+      <obj_property name="ElementShortName">e8</obj_property>
+      <obj_property name="ObjectShortName">e8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e9" type="logic">
+      <obj_property name="ElementShortName">e9</obj_property>
+      <obj_property name="ObjectShortName">e9</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e10" type="logic">
+      <obj_property name="ElementShortName">e10</obj_property>
+      <obj_property name="ObjectShortName">e10</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e11" type="logic">
+      <obj_property name="ElementShortName">e11</obj_property>
+      <obj_property name="ObjectShortName">e11</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e12" type="logic">
+      <obj_property name="ElementShortName">e12</obj_property>
+      <obj_property name="ObjectShortName">e12</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e13" type="logic">
+      <obj_property name="ElementShortName">e13</obj_property>
+      <obj_property name="ObjectShortName">e13</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e14" type="logic">
+      <obj_property name="ElementShortName">e14</obj_property>
+      <obj_property name="ObjectShortName">e14</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e15" type="logic">
+      <obj_property name="ElementShortName">e15</obj_property>
+      <obj_property name="ObjectShortName">e15</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e16" type="logic">
+      <obj_property name="ElementShortName">e16</obj_property>
+      <obj_property name="ObjectShortName">e16</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e17" type="logic">
+      <obj_property name="ElementShortName">e17</obj_property>
+      <obj_property name="ObjectShortName">e17</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e18" type="logic">
+      <obj_property name="ElementShortName">e18</obj_property>
+      <obj_property name="ObjectShortName">e18</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e19" type="logic">
+      <obj_property name="ElementShortName">e19</obj_property>
+      <obj_property name="ObjectShortName">e19</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e20" type="logic">
+      <obj_property name="ElementShortName">e20</obj_property>
+      <obj_property name="ObjectShortName">e20</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e21" type="logic">
+      <obj_property name="ElementShortName">e21</obj_property>
+      <obj_property name="ObjectShortName">e21</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e22" type="logic">
+      <obj_property name="ElementShortName">e22</obj_property>
+      <obj_property name="ObjectShortName">e22</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e23" type="logic">
+      <obj_property name="ElementShortName">e23</obj_property>
+      <obj_property name="ObjectShortName">e23</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e24" type="logic">
+      <obj_property name="ElementShortName">e24</obj_property>
+      <obj_property name="ObjectShortName">e24</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e25" type="logic">
+      <obj_property name="ElementShortName">e25</obj_property>
+      <obj_property name="ObjectShortName">e25</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e26" type="logic">
+      <obj_property name="ElementShortName">e26</obj_property>
+      <obj_property name="ObjectShortName">e26</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e27" type="logic">
+      <obj_property name="ElementShortName">e27</obj_property>
+      <obj_property name="ObjectShortName">e27</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e28" type="logic">
+      <obj_property name="ElementShortName">e28</obj_property>
+      <obj_property name="ObjectShortName">e28</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e29" type="logic">
+      <obj_property name="ElementShortName">e29</obj_property>
+      <obj_property name="ObjectShortName">e29</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e30" type="logic">
+      <obj_property name="ElementShortName">e30</obj_property>
+      <obj_property name="ObjectShortName">e30</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e31" type="logic">
+      <obj_property name="ElementShortName">e31</obj_property>
+      <obj_property name="ObjectShortName">e31</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e32" type="logic">
+      <obj_property name="ElementShortName">e32</obj_property>
+      <obj_property name="ObjectShortName">e32</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e34" type="logic">
+      <obj_property name="ElementShortName">e34</obj_property>
+      <obj_property name="ObjectShortName">e34</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e35" type="logic">
+      <obj_property name="ElementShortName">e35</obj_property>
+      <obj_property name="ObjectShortName">e35</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e37_1" type="logic">
+      <obj_property name="ElementShortName">e37_1</obj_property>
+      <obj_property name="ObjectShortName">e37_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e37_2" type="logic">
+      <obj_property name="ElementShortName">e37_2</obj_property>
+      <obj_property name="ObjectShortName">e37_2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e2_1" type="logic">
+      <obj_property name="ElementShortName">e2_1</obj_property>
+      <obj_property name="ObjectShortName">e2_1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e33" type="array">
+      <obj_property name="ElementShortName">e33[1:0]</obj_property>
+      <obj_property name="ObjectShortName">e33[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/e36" type="array">
+      <obj_property name="ElementShortName">e36[1:0]</obj_property>
+      <obj_property name="ObjectShortName">e36[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/rxprocess_flag" type="logic">
+      <obj_property name="ElementShortName">rxprocess_flag</obj_property>
+      <obj_property name="ObjectShortName">rxprocess_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/rx_buff" type="array">
+      <obj_property name="ElementShortName">rx_buff[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_buff[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/map_row" type="array">
+      <obj_property name="ElementShortName">map_row[7:0]</obj_property>
+      <obj_property name="ObjectShortName">map_row[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/map_column" type="array">
+      <obj_property name="ElementShortName">map_column[7:0]</obj_property>
+      <obj_property name="ObjectShortName">map_column[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/map_cntbit" type="array">
+      <obj_property name="ElementShortName">map_cntbit[2:0]</obj_property>
+      <obj_property name="ObjectShortName">map_cntbit[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/map_addra" type="array">
+      <obj_property name="ElementShortName">map_addra[11:0]</obj_property>
+      <obj_property name="ObjectShortName">map_addra[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/map_en" type="logic">
+      <obj_property name="ElementShortName">map_en</obj_property>
+      <obj_property name="ObjectShortName">map_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/map_wea" type="logic">
+      <obj_property name="ElementShortName">map_wea</obj_property>
+      <obj_property name="ObjectShortName">map_wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/map_dina" type="logic">
+      <obj_property name="ElementShortName">map_dina</obj_property>
+      <obj_property name="ObjectShortName">map_dina</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/map_douta" type="logic">
+      <obj_property name="ElementShortName">map_douta</obj_property>
+      <obj_property name="ObjectShortName">map_douta</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/parent_node" type="array">
+      <obj_property name="ElementShortName">parent_node[2:0][11:0]</obj_property>
+      <obj_property name="ObjectShortName">parent_node[2:0][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/close_row" type="array">
+      <obj_property name="ElementShortName">close_row[11:0]</obj_property>
+      <obj_property name="ObjectShortName">close_row[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/min_f" type="array">
+      <obj_property name="ElementShortName">min_f[11:0]</obj_property>
+      <obj_property name="ObjectShortName">min_f[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/close_ena" type="logic">
+      <obj_property name="ElementShortName">close_ena</obj_property>
+      <obj_property name="ObjectShortName">close_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/close_wea" type="logic">
+      <obj_property name="ElementShortName">close_wea</obj_property>
+      <obj_property name="ObjectShortName">close_wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/close_addra" type="array">
+      <obj_property name="ElementShortName">close_addra[11:0]</obj_property>
+      <obj_property name="ObjectShortName">close_addra[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/close_addr1" type="array">
+      <obj_property name="ElementShortName">close_addr1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">close_addr1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/close_cyin" type="array">
+      <obj_property name="ElementShortName">close_cyin[7:0]</obj_property>
+      <obj_property name="ObjectShortName">close_cyin[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/close_cxin" type="array">
+      <obj_property name="ElementShortName">close_cxin[7:0]</obj_property>
+      <obj_property name="ObjectShortName">close_cxin[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/close_cyout" type="array">
+      <obj_property name="ElementShortName">close_cyout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">close_cyout[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/close_cxout" type="array">
+      <obj_property name="ElementShortName">close_cxout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">close_cxout[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openpy_ena" type="logic">
+      <obj_property name="ElementShortName">openpy_ena</obj_property>
+      <obj_property name="ObjectShortName">openpy_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openpy_wea" type="logic">
+      <obj_property name="ElementShortName">openpy_wea</obj_property>
+      <obj_property name="ObjectShortName">openpy_wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openpy_enb" type="logic">
+      <obj_property name="ElementShortName">openpy_enb</obj_property>
+      <obj_property name="ObjectShortName">openpy_enb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openpy_web" type="logic">
+      <obj_property name="ElementShortName">openpy_web</obj_property>
+      <obj_property name="ObjectShortName">openpy_web</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openpx_ena" type="logic">
+      <obj_property name="ElementShortName">openpx_ena</obj_property>
+      <obj_property name="ObjectShortName">openpx_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openpx_wea" type="logic">
+      <obj_property name="ElementShortName">openpx_wea</obj_property>
+      <obj_property name="ObjectShortName">openpx_wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openpx_enb" type="logic">
+      <obj_property name="ElementShortName">openpx_enb</obj_property>
+      <obj_property name="ObjectShortName">openpx_enb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openpx_web" type="logic">
+      <obj_property name="ElementShortName">openpx_web</obj_property>
+      <obj_property name="ObjectShortName">openpx_web</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/opency_ena" type="logic">
+      <obj_property name="ElementShortName">opency_ena</obj_property>
+      <obj_property name="ObjectShortName">opency_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/opency_wea" type="logic">
+      <obj_property name="ElementShortName">opency_wea</obj_property>
+      <obj_property name="ObjectShortName">opency_wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/opency_enb" type="logic">
+      <obj_property name="ElementShortName">opency_enb</obj_property>
+      <obj_property name="ObjectShortName">opency_enb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/opency_web" type="logic">
+      <obj_property name="ElementShortName">opency_web</obj_property>
+      <obj_property name="ObjectShortName">opency_web</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/opencx_ena" type="logic">
+      <obj_property name="ElementShortName">opencx_ena</obj_property>
+      <obj_property name="ObjectShortName">opencx_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/opencx_wea" type="logic">
+      <obj_property name="ElementShortName">opencx_wea</obj_property>
+      <obj_property name="ObjectShortName">opencx_wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/opencx_enb" type="logic">
+      <obj_property name="ElementShortName">opencx_enb</obj_property>
+      <obj_property name="ObjectShortName">opencx_enb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/opencx_web" type="logic">
+      <obj_property name="ElementShortName">opencx_web</obj_property>
+      <obj_property name="ObjectShortName">opencx_web</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openg1_ena" type="logic">
+      <obj_property name="ElementShortName">openg1_ena</obj_property>
+      <obj_property name="ObjectShortName">openg1_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openg1_wea" type="logic">
+      <obj_property name="ElementShortName">openg1_wea</obj_property>
+      <obj_property name="ObjectShortName">openg1_wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openg1_enb" type="logic">
+      <obj_property name="ElementShortName">openg1_enb</obj_property>
+      <obj_property name="ObjectShortName">openg1_enb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openg1_web" type="logic">
+      <obj_property name="ElementShortName">openg1_web</obj_property>
+      <obj_property name="ObjectShortName">openg1_web</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openg2_ena" type="logic">
+      <obj_property name="ElementShortName">openg2_ena</obj_property>
+      <obj_property name="ObjectShortName">openg2_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openg2_wea" type="logic">
+      <obj_property name="ElementShortName">openg2_wea</obj_property>
+      <obj_property name="ObjectShortName">openg2_wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openg2_enb" type="logic">
+      <obj_property name="ElementShortName">openg2_enb</obj_property>
+      <obj_property name="ObjectShortName">openg2_enb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openg2_web" type="logic">
+      <obj_property name="ElementShortName">openg2_web</obj_property>
+      <obj_property name="ObjectShortName">openg2_web</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openh_ena" type="logic">
+      <obj_property name="ElementShortName">openh_ena</obj_property>
+      <obj_property name="ObjectShortName">openh_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openh_wea" type="logic">
+      <obj_property name="ElementShortName">openh_wea</obj_property>
+      <obj_property name="ObjectShortName">openh_wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openh_enb" type="logic">
+      <obj_property name="ElementShortName">openh_enb</obj_property>
+      <obj_property name="ObjectShortName">openh_enb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openh_web" type="logic">
+      <obj_property name="ElementShortName">openh_web</obj_property>
+      <obj_property name="ObjectShortName">openh_web</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openf_ena" type="logic">
+      <obj_property name="ElementShortName">openf_ena</obj_property>
+      <obj_property name="ObjectShortName">openf_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openf_wea" type="logic">
+      <obj_property name="ElementShortName">openf_wea</obj_property>
+      <obj_property name="ObjectShortName">openf_wea</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openf_enb" type="logic">
+      <obj_property name="ElementShortName">openf_enb</obj_property>
+      <obj_property name="ObjectShortName">openf_enb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openf_web" type="logic">
+      <obj_property name="ElementShortName">openf_web</obj_property>
+      <obj_property name="ObjectShortName">openf_web</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openpy_addra" type="array">
+      <obj_property name="ElementShortName">openpy_addra[11:0]</obj_property>
+      <obj_property name="ObjectShortName">openpy_addra[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openpy_addrb" type="array">
+      <obj_property name="ElementShortName">openpy_addrb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">openpy_addrb[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openpx_addra" type="array">
+      <obj_property name="ElementShortName">openpx_addra[11:0]</obj_property>
+      <obj_property name="ObjectShortName">openpx_addra[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openpx_addrb" type="array">
+      <obj_property name="ElementShortName">openpx_addrb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">openpx_addrb[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/opency_addra" type="array">
+      <obj_property name="ElementShortName">opency_addra[11:0]</obj_property>
+      <obj_property name="ObjectShortName">opency_addra[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/opency_addrb" type="array">
+      <obj_property name="ElementShortName">opency_addrb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">opency_addrb[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/opencx_addra" type="array">
+      <obj_property name="ElementShortName">opencx_addra[11:0]</obj_property>
+      <obj_property name="ObjectShortName">opencx_addra[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/opencx_addrb" type="array">
+      <obj_property name="ElementShortName">opencx_addrb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">opencx_addrb[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openg1_addra" type="array">
+      <obj_property name="ElementShortName">openg1_addra[11:0]</obj_property>
+      <obj_property name="ObjectShortName">openg1_addra[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openg1_addrb" type="array">
+      <obj_property name="ElementShortName">openg1_addrb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">openg1_addrb[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openg2_addra" type="array">
+      <obj_property name="ElementShortName">openg2_addra[11:0]</obj_property>
+      <obj_property name="ObjectShortName">openg2_addra[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openg2_addrb" type="array">
+      <obj_property name="ElementShortName">openg2_addrb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">openg2_addrb[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openh_addra" type="array">
+      <obj_property name="ElementShortName">openh_addra[11:0]</obj_property>
+      <obj_property name="ObjectShortName">openh_addra[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openh_addrb" type="array">
+      <obj_property name="ElementShortName">openh_addrb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">openh_addrb[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openf_addra" type="array">
+      <obj_property name="ElementShortName">openf_addra[11:0]</obj_property>
+      <obj_property name="ObjectShortName">openf_addra[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openf_addrb" type="array">
+      <obj_property name="ElementShortName">openf_addrb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">openf_addrb[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openpy_douta" type="array">
+      <obj_property name="ElementShortName">openpy_douta[7:0]</obj_property>
+      <obj_property name="ObjectShortName">openpy_douta[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openpy_doutb" type="array">
+      <obj_property name="ElementShortName">openpy_doutb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">openpy_doutb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openpx_douta" type="array">
+      <obj_property name="ElementShortName">openpx_douta[7:0]</obj_property>
+      <obj_property name="ObjectShortName">openpx_douta[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openpx_doutb" type="array">
+      <obj_property name="ElementShortName">openpx_doutb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">openpx_doutb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/opency_douta" type="array">
+      <obj_property name="ElementShortName">opency_douta[7:0]</obj_property>
+      <obj_property name="ObjectShortName">opency_douta[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/opencx_douta" type="array">
+      <obj_property name="ElementShortName">opencx_douta[7:0]</obj_property>
+      <obj_property name="ObjectShortName">opencx_douta[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/opencx_doutb" type="array">
+      <obj_property name="ElementShortName">opencx_doutb[7:0]</obj_property>
+      <obj_property name="ObjectShortName">opencx_doutb[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openg1_douta" type="array">
+      <obj_property name="ElementShortName">openg1_douta[11:0]</obj_property>
+      <obj_property name="ObjectShortName">openg1_douta[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openg1_doutb" type="array">
+      <obj_property name="ElementShortName">openg1_doutb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">openg1_doutb[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openg2_douta" type="array">
+      <obj_property name="ElementShortName">openg2_douta[11:0]</obj_property>
+      <obj_property name="ObjectShortName">openg2_douta[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openg2_doutb" type="array">
+      <obj_property name="ElementShortName">openg2_doutb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">openg2_doutb[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openh_douta" type="array">
+      <obj_property name="ElementShortName">openh_douta[11:0]</obj_property>
+      <obj_property name="ObjectShortName">openh_douta[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openh_doutb" type="array">
+      <obj_property name="ElementShortName">openh_doutb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">openh_doutb[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openf_douta" type="array">
+      <obj_property name="ElementShortName">openf_douta[11:0]</obj_property>
+      <obj_property name="ObjectShortName">openf_douta[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openf_doutb" type="array">
+      <obj_property name="ElementShortName">openf_doutb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">openf_doutb[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/child_cnt" type="array">
+      <obj_property name="ElementShortName">child_cnt[3:0]</obj_property>
+      <obj_property name="ObjectShortName">child_cnt[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/new_child1" type="logic">
+      <obj_property name="ElementShortName">new_child1</obj_property>
+      <obj_property name="ObjectShortName">new_child1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/new_child2" type="logic">
+      <obj_property name="ElementShortName">new_child2</obj_property>
+      <obj_property name="ObjectShortName">new_child2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/new_child3" type="logic">
+      <obj_property name="ElementShortName">new_child3</obj_property>
+      <obj_property name="ObjectShortName">new_child3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/new_child4" type="logic">
+      <obj_property name="ElementShortName">new_child4</obj_property>
+      <obj_property name="ObjectShortName">new_child4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/new_child5" type="logic">
+      <obj_property name="ElementShortName">new_child5</obj_property>
+      <obj_property name="ObjectShortName">new_child5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/new_child6" type="logic">
+      <obj_property name="ElementShortName">new_child6</obj_property>
+      <obj_property name="ObjectShortName">new_child6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/new_child7" type="logic">
+      <obj_property name="ElementShortName">new_child7</obj_property>
+      <obj_property name="ObjectShortName">new_child7</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/new_child8" type="logic">
+      <obj_property name="ElementShortName">new_child8</obj_property>
+      <obj_property name="ObjectShortName">new_child8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/obs_flag1" type="logic">
+      <obj_property name="ElementShortName">obs_flag1</obj_property>
+      <obj_property name="ObjectShortName">obs_flag1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/obs_flag2" type="logic">
+      <obj_property name="ElementShortName">obs_flag2</obj_property>
+      <obj_property name="ObjectShortName">obs_flag2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/obs_flag3" type="logic">
+      <obj_property name="ElementShortName">obs_flag3</obj_property>
+      <obj_property name="ObjectShortName">obs_flag3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/obs_flag4" type="logic">
+      <obj_property name="ElementShortName">obs_flag4</obj_property>
+      <obj_property name="ObjectShortName">obs_flag4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/obs_flag5" type="logic">
+      <obj_property name="ElementShortName">obs_flag5</obj_property>
+      <obj_property name="ObjectShortName">obs_flag5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/obs_flag6" type="logic">
+      <obj_property name="ElementShortName">obs_flag6</obj_property>
+      <obj_property name="ObjectShortName">obs_flag6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/obs_flag7" type="logic">
+      <obj_property name="ElementShortName">obs_flag7</obj_property>
+      <obj_property name="ObjectShortName">obs_flag7</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/obs_flag8" type="logic">
+      <obj_property name="ElementShortName">obs_flag8</obj_property>
+      <obj_property name="ObjectShortName">obs_flag8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/child_flag1" type="logic">
+      <obj_property name="ElementShortName">child_flag1</obj_property>
+      <obj_property name="ObjectShortName">child_flag1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/child_flag2" type="logic">
+      <obj_property name="ElementShortName">child_flag2</obj_property>
+      <obj_property name="ObjectShortName">child_flag2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/child_flag3" type="logic">
+      <obj_property name="ElementShortName">child_flag3</obj_property>
+      <obj_property name="ObjectShortName">child_flag3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/child_flag4" type="logic">
+      <obj_property name="ElementShortName">child_flag4</obj_property>
+      <obj_property name="ObjectShortName">child_flag4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/child_flag5" type="logic">
+      <obj_property name="ElementShortName">child_flag5</obj_property>
+      <obj_property name="ObjectShortName">child_flag5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/child_flag6" type="logic">
+      <obj_property name="ElementShortName">child_flag6</obj_property>
+      <obj_property name="ObjectShortName">child_flag6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/child_flag7" type="logic">
+      <obj_property name="ElementShortName">child_flag7</obj_property>
+      <obj_property name="ObjectShortName">child_flag7</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/child_flag8" type="logic">
+      <obj_property name="ElementShortName">child_flag8</obj_property>
+      <obj_property name="ObjectShortName">child_flag8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/child_node1" type="array">
+      <obj_property name="ElementShortName">child_node1[1:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">child_node1[1:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/child_node2" type="array">
+      <obj_property name="ElementShortName">child_node2[1:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">child_node2[1:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/child_node3" type="array">
+      <obj_property name="ElementShortName">child_node3[1:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">child_node3[1:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/child_node4" type="array">
+      <obj_property name="ElementShortName">child_node4[1:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">child_node4[1:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/child_node5" type="array">
+      <obj_property name="ElementShortName">child_node5[1:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">child_node5[1:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/child_node6" type="array">
+      <obj_property name="ElementShortName">child_node6[1:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">child_node6[1:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/child_node7" type="array">
+      <obj_property name="ElementShortName">child_node7[1:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">child_node7[1:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/child_node8" type="array">
+      <obj_property name="ElementShortName">child_node8[1:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">child_node8[1:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/open_row" type="array">
+      <obj_property name="ElementShortName">open_row[11:0]</obj_property>
+      <obj_property name="ObjectShortName">open_row[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/openreal_row" type="array">
+      <obj_property name="ElementShortName">openreal_row[11:0]</obj_property>
+      <obj_property name="ObjectShortName">openreal_row[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/open_addr1" type="array">
+      <obj_property name="ElementShortName">open_addr1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">open_addr1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/open_addr2" type="array">
+      <obj_property name="ElementShortName">open_addr2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">open_addr2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/open_addr3" type="array">
+      <obj_property name="ElementShortName">open_addr3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">open_addr3[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/inopen_flag1" type="logic">
+      <obj_property name="ElementShortName">inopen_flag1</obj_property>
+      <obj_property name="ObjectShortName">inopen_flag1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/inopen_flag2" type="logic">
+      <obj_property name="ElementShortName">inopen_flag2</obj_property>
+      <obj_property name="ObjectShortName">inopen_flag2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/inopen_flag3" type="logic">
+      <obj_property name="ElementShortName">inopen_flag3</obj_property>
+      <obj_property name="ObjectShortName">inopen_flag3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/inopen_flag4" type="logic">
+      <obj_property name="ElementShortName">inopen_flag4</obj_property>
+      <obj_property name="ObjectShortName">inopen_flag4</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/inopen_flag5" type="logic">
+      <obj_property name="ElementShortName">inopen_flag5</obj_property>
+      <obj_property name="ObjectShortName">inopen_flag5</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/inopen_flag6" type="logic">
+      <obj_property name="ElementShortName">inopen_flag6</obj_property>
+      <obj_property name="ObjectShortName">inopen_flag6</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/inopen_flag7" type="logic">
+      <obj_property name="ElementShortName">inopen_flag7</obj_property>
+      <obj_property name="ObjectShortName">inopen_flag7</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/inopen_flag8" type="logic">
+      <obj_property name="ElementShortName">inopen_flag8</obj_property>
+      <obj_property name="ObjectShortName">inopen_flag8</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/findpath_flag" type="logic">
+      <obj_property name="ElementShortName">findpath_flag</obj_property>
+      <obj_property name="ObjectShortName">findpath_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/path_row" type="array">
+      <obj_property name="ElementShortName">path_row[7:0]</obj_property>
+      <obj_property name="ObjectShortName">path_row[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/path_column" type="array">
+      <obj_property name="ElementShortName">path_column[7:0]</obj_property>
+      <obj_property name="ObjectShortName">path_column[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/tx_cnt" type="array">
+      <obj_property name="ElementShortName">tx_cnt[1:0]</obj_property>
+      <obj_property name="ObjectShortName">tx_cnt[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/MAP_ROW" type="array">
+      <obj_property name="ElementShortName">MAP_ROW[7:0]</obj_property>
+      <obj_property name="ObjectShortName">MAP_ROW[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/MAP_COLUMN" type="array">
+      <obj_property name="ElementShortName">MAP_COLUMN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">MAP_COLUMN[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/MAP_EXP" type="array">
+      <obj_property name="ElementShortName">MAP_EXP[7:0]</obj_property>
+      <obj_property name="ObjectShortName">MAP_EXP[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/START_ROW" type="array">
+      <obj_property name="ElementShortName">START_ROW[7:0]</obj_property>
+      <obj_property name="ObjectShortName">START_ROW[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/START_COLUMN" type="array">
+      <obj_property name="ElementShortName">START_COLUMN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">START_COLUMN[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/END_ROW" type="array">
+      <obj_property name="ElementShortName">END_ROW[7:0]</obj_property>
+      <obj_property name="ObjectShortName">END_ROW[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/END_COLUMN" type="array">
+      <obj_property name="ElementShortName">END_COLUMN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">END_COLUMN[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S0" type="array">
+      <obj_property name="ElementShortName">S0[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S0[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S1" type="array">
+      <obj_property name="ElementShortName">S1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S2" type="array">
+      <obj_property name="ElementShortName">S2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S3" type="array">
+      <obj_property name="ElementShortName">S3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S3[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S4" type="array">
+      <obj_property name="ElementShortName">S4[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S4[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S5" type="array">
+      <obj_property name="ElementShortName">S5[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S5[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S6" type="array">
+      <obj_property name="ElementShortName">S6[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S6[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S7" type="array">
+      <obj_property name="ElementShortName">S7[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S7[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S8" type="array">
+      <obj_property name="ElementShortName">S8[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S8[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S9" type="array">
+      <obj_property name="ElementShortName">S9[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S9[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S10" type="array">
+      <obj_property name="ElementShortName">S10[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S10[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S11" type="array">
+      <obj_property name="ElementShortName">S11[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S11[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S12" type="array">
+      <obj_property name="ElementShortName">S12[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S12[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S13" type="array">
+      <obj_property name="ElementShortName">S13[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S13[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S14" type="array">
+      <obj_property name="ElementShortName">S14[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S14[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S15" type="array">
+      <obj_property name="ElementShortName">S15[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S15[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S16" type="array">
+      <obj_property name="ElementShortName">S16[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S16[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S17" type="array">
+      <obj_property name="ElementShortName">S17[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S17[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S18" type="array">
+      <obj_property name="ElementShortName">S18[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S18[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S19" type="array">
+      <obj_property name="ElementShortName">S19[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S19[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S20" type="array">
+      <obj_property name="ElementShortName">S20[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S20[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S21" type="array">
+      <obj_property name="ElementShortName">S21[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S21[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/astar_gnps_tb/u_astar_gnps/S22" type="array">
+      <obj_property name="ElementShortName">S22[4:0]</obj_property>
+      <obj_property name="ObjectShortName">S22[4:0]</obj_property>
+   </wvobject>
+</wave_config>

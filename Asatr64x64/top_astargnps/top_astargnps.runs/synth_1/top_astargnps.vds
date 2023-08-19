@@ -1,0 +1,752 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May 18 20:51:03 2022
+# Process ID: 7072
+# Current directory: G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1
+# Command line: vivado.exe -log top_astargnps.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_astargnps.tcl
+# Log file: G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1/top_astargnps.vds
+# Journal file: G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top_astargnps.tcl -notrace
+Command: synth_design -top top_astargnps -part xc7vx485tffg1761-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8012 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 493.461 ; gain = 95.805
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_astargnps' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/top_astargnps.v:23]
+	Parameter CLK bound to: 28'b0101111101011110000100000000 
+	Parameter BPS bound to: 17'b11100001000000000 
+	Parameter MAP_ROW bound to: 8'b01000000 
+	Parameter MAP_COLUMN bound to: 8'b01000000 
+	Parameter MAP_EXP bound to: 8'b00000110 
+	Parameter START_ROW bound to: 8'b00000001 
+	Parameter START_COLUMN bound to: 8'b00000001 
+	Parameter END_ROW bound to: 8'b00111101 
+	Parameter END_COLUMN bound to: 8'b00111101 
+INFO: [Synth 8-6157] synthesizing module 'IBUFGDS' [D:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20866]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: FALSE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFGDS' (1#1) [D:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20866]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1/.Xil/Vivado-7072-DESKTOP-A9E5TQ0/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (2#1) [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1/.Xil/Vivado-7072-DESKTOP-A9E5TQ0/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/uart_rx.v:1]
+	Parameter CLK bound to: 28'b0101111101011110000100000000 
+	Parameter BPS bound to: 17'b11100001000000000 
+	Parameter BPS_CNT bound to: 28'b0000000000000000001101100100 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (3#1) [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/uart_rx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'astar_gnps' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1]
+	Parameter MAP_ROW bound to: 8'b01000000 
+	Parameter MAP_COLUMN bound to: 8'b01000000 
+	Parameter MAP_EXP bound to: 8'b00000110 
+	Parameter START_ROW bound to: 8'b00000001 
+	Parameter START_COLUMN bound to: 8'b00000001 
+	Parameter END_ROW bound to: 8'b00111101 
+	Parameter END_COLUMN bound to: 8'b00111101 
+	Parameter S0 bound to: 5'b00000 
+	Parameter S1 bound to: 5'b00001 
+	Parameter S2 bound to: 5'b00010 
+	Parameter S3 bound to: 5'b00011 
+	Parameter S4 bound to: 5'b00100 
+	Parameter S5 bound to: 5'b00101 
+	Parameter S6 bound to: 5'b00110 
+	Parameter S7 bound to: 5'b00111 
+	Parameter S8 bound to: 5'b01000 
+	Parameter S9 bound to: 5'b01001 
+	Parameter S10 bound to: 5'b01010 
+	Parameter S11 bound to: 5'b01011 
+	Parameter S12 bound to: 5'b01100 
+	Parameter S13 bound to: 5'b01101 
+	Parameter S14 bound to: 5'b01110 
+	Parameter S15 bound to: 5'b01111 
+	Parameter S16 bound to: 5'b10000 
+	Parameter S17 bound to: 5'b10001 
+	Parameter S18 bound to: 5'b10010 
+	Parameter S19 bound to: 5'b10011 
+	Parameter S20 bound to: 5'b10100 
+	Parameter S21 bound to: 5'b10101 
+	Parameter S22 bound to: 5'b10110 
+INFO: [Synth 8-6157] synthesizing module 'mapram1' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1/.Xil/Vivado-7072-DESKTOP-A9E5TQ0/realtime/mapram1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mapram1' (4#1) [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1/.Xil/Vivado-7072-DESKTOP-A9E5TQ0/realtime/mapram1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'closeram8' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1/.Xil/Vivado-7072-DESKTOP-A9E5TQ0/realtime/closeram8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'closeram8' (5#1) [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1/.Xil/Vivado-7072-DESKTOP-A9E5TQ0/realtime/closeram8_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'openram8' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1/.Xil/Vivado-7072-DESKTOP-A9E5TQ0/realtime/openram8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'openram8' (6#1) [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1/.Xil/Vivado-7072-DESKTOP-A9E5TQ0/realtime/openram8_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'openram12' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1/.Xil/Vivado-7072-DESKTOP-A9E5TQ0/realtime/openram12_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'openram12' (7#1) [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1/.Xil/Vivado-7072-DESKTOP-A9E5TQ0/realtime/openram12_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:2705]
+INFO: [Synth 8-6157] synthesizing module 'ila_astar' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1/.Xil/Vivado-7072-DESKTOP-A9E5TQ0/realtime/ila_astar_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_astar' (8#1) [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1/.Xil/Vivado-7072-DESKTOP-A9E5TQ0/realtime/ila_astar_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_astar_i'. This will prevent further optimization [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:2705]
+INFO: [Synth 8-6155] done synthesizing module 'astar_gnps' (9#1) [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/uart_tx.v:1]
+	Parameter CLK bound to: 28'b0101111101011110000100000000 
+	Parameter BPS bound to: 17'b11100001000000000 
+	Parameter BPS_CNT bound to: 28'b0000000000000000001101100100 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (10#1) [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/uart_tx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top_astargnps' (11#1) [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/top_astargnps.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 613.059 ; gain = 215.402
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 613.059 ; gain = 215.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 613.059 ; gain = 215.402
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12/openg_ram_in_context.xdc] for cell 'astar_gnps_i/openlist_g1_i'
+Finished Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12/openg_ram_in_context.xdc] for cell 'astar_gnps_i/openlist_g1_i'
+Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12/openg_ram_in_context.xdc] for cell 'astar_gnps_i/openlist_g2_i'
+Finished Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12/openg_ram_in_context.xdc] for cell 'astar_gnps_i/openlist_g2_i'
+Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12/openg_ram_in_context.xdc] for cell 'astar_gnps_i/openlist_h_i'
+Finished Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12/openg_ram_in_context.xdc] for cell 'astar_gnps_i/openlist_h_i'
+Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12/openg_ram_in_context.xdc] for cell 'astar_gnps_i/openlist_f_i'
+Finished Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12/openg_ram_in_context.xdc] for cell 'astar_gnps_i/openlist_f_i'
+Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8/openram8_in_context.xdc] for cell 'astar_gnps_i/openlist_parenty_i'
+Finished Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8/openram8_in_context.xdc] for cell 'astar_gnps_i/openlist_parenty_i'
+Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8/openram8_in_context.xdc] for cell 'astar_gnps_i/openlist_parentx_i'
+Finished Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8/openram8_in_context.xdc] for cell 'astar_gnps_i/openlist_parentx_i'
+Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8/openram8_in_context.xdc] for cell 'astar_gnps_i/openlist_childy_i'
+Finished Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8/openram8_in_context.xdc] for cell 'astar_gnps_i/openlist_childy_i'
+Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8/openram8_in_context.xdc] for cell 'astar_gnps_i/openlist_childx_i'
+Finished Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8/openram8_in_context.xdc] for cell 'astar_gnps_i/openlist_childx_i'
+Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/closeram8/closelist_in_context.xdc] for cell 'astar_gnps_i/closelist_childy_i'
+Finished Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/closeram8/closelist_in_context.xdc] for cell 'astar_gnps_i/closelist_childy_i'
+Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/closeram8/closelist_in_context.xdc] for cell 'astar_gnps_i/closelist_childx_i'
+Finished Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/closeram8/closelist_in_context.xdc] for cell 'astar_gnps_i/closelist_childx_i'
+Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1/map_ram_in_context.xdc] for cell 'astar_gnps_i/map_i'
+Finished Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1/map_ram_in_context.xdc] for cell 'astar_gnps_i/map_i'
+Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_0_i'
+Finished Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_0_i'
+Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_astar/ila_astar_in_context.xdc] for cell 'astar_gnps_i/ila_astar_i'
+Finished Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_astar/ila_astar_in_context.xdc] for cell 'astar_gnps_i/ila_astar_i'
+Parsing XDC File [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/constrs_1/new/io_plan.xdc]
+Finished Parsing XDC File [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/constrs_1/new/io_plan.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/constrs_1/new/io_plan.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_astargnps_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_astargnps_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1/dont_touch.xdc]
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1115.277 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1115.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1115.277 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1115.277 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'astar_gnps_i/closelist_childx_i' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'astar_gnps_i/closelist_childy_i' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'astar_gnps_i/map_i' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'astar_gnps_i/openlist_childx_i' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'astar_gnps_i/openlist_childy_i' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'astar_gnps_i/openlist_f_i' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'astar_gnps_i/openlist_g1_i' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'astar_gnps_i/openlist_g2_i' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'astar_gnps_i/openlist_h_i' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'astar_gnps_i/openlist_parentx_i' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'astar_gnps_i/openlist_parenty_i' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1115.277 ; gain = 717.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1761-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1115.277 ; gain = 717.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for astar_gnps_i/openlist_f_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for astar_gnps_i/openlist_g1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for astar_gnps_i/openlist_g2_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for astar_gnps_i/openlist_h_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for astar_gnps_i/openlist_childx_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for astar_gnps_i/openlist_childy_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for astar_gnps_i/openlist_parentx_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for astar_gnps_i/openlist_parenty_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for astar_gnps_i/closelist_childx_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for astar_gnps_i/closelist_childy_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for astar_gnps_i/map_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk_wiz_0_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for astar_gnps_i/ila_astar_i. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1115.277 ; gain = 717.621
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "rx_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'openpx_enb_reg' into 'openpy_enb_reg' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1123]
+INFO: [Synth 8-4471] merging register 'opency_enb_reg' into 'openpy_enb_reg' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1138]
+INFO: [Synth 8-4471] merging register 'opencx_enb_reg' into 'openpy_enb_reg' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1153]
+INFO: [Synth 8-4471] merging register 'openh_enb_reg' into 'openpy_enb_reg' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1198]
+INFO: [Synth 8-4471] merging register 'openf_enb_reg' into 'openpy_enb_reg' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1213]
+INFO: [Synth 8-4471] merging register 'openpy_web_reg' into 'openpy_enb_reg' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1109]
+INFO: [Synth 8-4471] merging register 'openpx_web_reg' into 'openpy_enb_reg' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1124]
+INFO: [Synth 8-4471] merging register 'opency_web_reg' into 'openpy_enb_reg' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1139]
+INFO: [Synth 8-4471] merging register 'opencx_web_reg' into 'openpy_enb_reg' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1154]
+INFO: [Synth 8-4471] merging register 'openh_web_reg' into 'openpy_enb_reg' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1199]
+INFO: [Synth 8-4471] merging register 'openf_web_reg' into 'openpy_enb_reg' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1214]
+INFO: [Synth 8-4471] merging register 'openpx_addrb_reg[11:0]' into 'openpy_addrb_reg[11:0]' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1125]
+INFO: [Synth 8-4471] merging register 'opency_addrb_reg[11:0]' into 'openpy_addrb_reg[11:0]' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1140]
+INFO: [Synth 8-4471] merging register 'opencx_addrb_reg[11:0]' into 'openpy_addrb_reg[11:0]' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1155]
+INFO: [Synth 8-4471] merging register 'openh_addrb_reg[11:0]' into 'openpy_addrb_reg[11:0]' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1200]
+INFO: [Synth 8-4471] merging register 'openf_addrb_reg[11:0]' into 'openpy_addrb_reg[11:0]' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1215]
+INFO: [Synth 8-4471] merging register 'openpx_dinb_reg[7:0]' into 'openpy_dinb_reg[7:0]' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1126]
+INFO: [Synth 8-4471] merging register 'opency_dinb_reg[7:0]' into 'openpy_dinb_reg[7:0]' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1141]
+INFO: [Synth 8-4471] merging register 'opencx_dinb_reg[7:0]' into 'openpy_dinb_reg[7:0]' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1156]
+INFO: [Synth 8-4471] merging register 'openg1_dinb_reg[11:0]' into 'openpy_addrb_reg[11:0]' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1171]
+INFO: [Synth 8-4471] merging register 'openg2_dinb_reg[11:0]' into 'openpy_addrb_reg[11:0]' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1186]
+INFO: [Synth 8-4471] merging register 'openh_dinb_reg[11:0]' into 'openpy_addrb_reg[11:0]' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1201]
+INFO: [Synth 8-4471] merging register 'openf_dinb_reg[11:0]' into 'openpy_addrb_reg[11:0]' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1216]
+INFO: [Synth 8-4471] merging register 'openg2_ena_reg' into 'openg1_ena_reg' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1177]
+INFO: [Synth 8-4471] merging register 'openg1_wea_reg' into 'openg1_ena_reg' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1163]
+INFO: [Synth 8-4471] merging register 'openg2_wea_reg' into 'openg1_ena_reg' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1178]
+INFO: [Synth 8-4471] merging register 'openg2_addra_reg[11:0]' into 'openg1_addra_reg[11:0]' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1179]
+INFO: [Synth 8-4471] merging register 'openg2_dina_reg[11:0]' into 'openg1_dina_reg[11:0]' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1180]
+INFO: [Synth 8-4471] merging register 'opencx_ena_reg' into 'opency_ena_reg' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1147]
+INFO: [Synth 8-4471] merging register 'opencx_wea_reg' into 'opency_wea_reg' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1148]
+INFO: [Synth 8-4471] merging register 'opencx_addra_reg[11:0]' into 'opency_addra_reg[11:0]' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1149]
+INFO: [Synth 8-4471] merging register 'openpx_ena_reg' into 'openpy_ena_reg' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1117]
+INFO: [Synth 8-4471] merging register 'openpx_wea_reg' into 'openpy_wea_reg' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1118]
+INFO: [Synth 8-4471] merging register 'openpx_addra_reg[11:0]' into 'openpy_addra_reg[11:0]' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1119]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:342]
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'astar_gnps'
+INFO: [Synth 8-802] inferred FSM for state register 'tx_cnt_reg' in module 'astar_gnps'
+INFO: [Synth 8-5546] ROM "map_row" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "map_column" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "e1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "e33" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "e35" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_flag" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_cnt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "map_row" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "map_column" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "e1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "e33" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "current_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "e35" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_flag" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_cnt" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "map_en" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "map_dina" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "e3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "new_child1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "new_child2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "new_child3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "new_child4" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "new_child5" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "new_child6" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "new_child7" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "new_child8" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "opency_dina" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "openh_dina" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "open_addr3" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "e36" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "e36" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "parent_node" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "tx_cnt" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     S22 |          00000000000000100000000 |                            10110
+                      S0 |          00000000100000000000000 |                            00000
+                      S1 |          00000000010000000000000 |                            00001
+                      S2 |          00000000000000010000000 |                            00010
+                      S3 |          00000000000001000000000 |                            00011
+                      S4 |          00000000000010000000000 |                            00100
+                      S5 |          10000000000000000000000 |                            00101
+                      S6 |          00100000000000000000000 |                            00110
+                      S7 |          00000100000000000000000 |                            00111
+                      S8 |          00001000000000000000000 |                            01000
+                      S9 |          01000000000000000000000 |                            01001
+                     S10 |          00000010000000000000000 |                            01010
+                     S11 |          00000001000000000000000 |                            01011
+                     S12 |          00000000000000000001000 |                            01100
+                     S13 |          00000000000000000000100 |                            01101
+                     S14 |          00000000000000000000001 |                            01110
+                     S15 |          00000000000000000000010 |                            01111
+                     S16 |          00000000001000000000000 |                            10000
+                     S17 |          00000000000100000000000 |                            10001
+                     S18 |          00000000000000001000000 |                            10010
+                     S19 |          00000000000000000010000 |                            10011
+                     S20 |          00000000000000000100000 |                            10100
+                     S21 |          00010000000000000000000 |                            10101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'astar_gnps'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tx_cnt_reg' using encoding 'one-hot' in module 'astar_gnps'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1115.277 ; gain = 717.621
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 2     
+	   3 Input     14 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 3     
+	   2 Input     12 Bit       Adders := 18    
+	   3 Input     12 Bit       Adders := 16    
+	   2 Input      8 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 20    
+	                8 Bit    Registers := 32    
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 100   
++---Muxes : 
+	  23 Input     23 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 21    
+	   4 Input     23 Bit        Muxes := 1     
+	   3 Input     23 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   5 Input     12 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 18    
+	  33 Input     12 Bit        Muxes := 1     
+	  32 Input     12 Bit        Muxes := 1     
+	  10 Input     12 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 1     
+	  34 Input     12 Bit        Muxes := 2     
+	  11 Input     12 Bit        Muxes := 2     
+	  15 Input     12 Bit        Muxes := 1     
+	   8 Input     12 Bit        Muxes := 2     
+	  13 Input     12 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 6     
+	   4 Input      8 Bit        Muxes := 3     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	  10 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 362   
+	   9 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module uart_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 8     
+	   9 Input      1 Bit        Muxes := 2     
+Module astar_gnps 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     14 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 3     
+	   2 Input     12 Bit       Adders := 18    
+	   3 Input     12 Bit       Adders := 16    
+	   2 Input      8 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 20    
+	                8 Bit    Registers := 29    
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 93    
++---Muxes : 
+	  23 Input     23 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 21    
+	   4 Input     23 Bit        Muxes := 1     
+	   3 Input     23 Bit        Muxes := 1     
+	   5 Input     12 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 18    
+	  33 Input     12 Bit        Muxes := 1     
+	  32 Input     12 Bit        Muxes := 1     
+	  10 Input     12 Bit        Muxes := 1     
+	   3 Input     12 Bit        Muxes := 1     
+	  34 Input     12 Bit        Muxes := 2     
+	  11 Input     12 Bit        Muxes := 2     
+	  15 Input     12 Bit        Muxes := 1     
+	   8 Input     12 Bit        Muxes := 2     
+	  13 Input     12 Bit        Muxes := 1     
+	   4 Input     12 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   4 Input      8 Bit        Muxes := 3     
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	  10 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 349   
+	  10 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 3     
+Module uart_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	  11 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "D1" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "u_uart_rx/rx_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_uart_rx/rx_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_uart_tx/tx_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/openh_dina_reg[0]' (FDRE) to 'astar_gnps_i/openh_dina_reg[1]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/openh_dina_reg[1]' (FDRE) to 'astar_gnps_i/openh_dina_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (astar_gnps_i/\openh_dina_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (astar_gnps_i/openg1_web_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (astar_gnps_i/openg2_web_reg)
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/parent_node_reg[1][10]' (FDRE) to 'astar_gnps_i/parent_node_reg[0][10]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/parent_node_reg[1][11]' (FDRE) to 'astar_gnps_i/parent_node_reg[0][10]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/parent_node_reg[1][9]' (FDRE) to 'astar_gnps_i/parent_node_reg[0][10]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/parent_node_reg[1][8]' (FDRE) to 'astar_gnps_i/parent_node_reg[0][10]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/parent_node_reg[0][10]' (FDRE) to 'astar_gnps_i/parent_node_reg[0][11]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/parent_node_reg[0][11]' (FDRE) to 'astar_gnps_i/parent_node_reg[0][9]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/parent_node_reg[0][9]' (FDRE) to 'astar_gnps_i/parent_node_reg[0][8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (astar_gnps_i/\parent_node_reg[0][8] )
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/openpy_dinb_reg[0]' (FDRE) to 'astar_gnps_i/openpy_addrb_reg[0]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/openpy_dinb_reg[1]' (FDRE) to 'astar_gnps_i/openpy_addrb_reg[0]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/openpy_dinb_reg[2]' (FDRE) to 'astar_gnps_i/openpy_addrb_reg[0]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/openpy_dinb_reg[3]' (FDRE) to 'astar_gnps_i/openpy_addrb_reg[0]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/openpy_dinb_reg[4]' (FDRE) to 'astar_gnps_i/openpy_addrb_reg[0]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/openpy_dinb_reg[5]' (FDRE) to 'astar_gnps_i/openpy_addrb_reg[0]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/openpy_dinb_reg[6]' (FDRE) to 'astar_gnps_i/openpy_addrb_reg[0]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/openpy_dinb_reg[7]' (FDRE) to 'astar_gnps_i/openpy_addrb_reg[0]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/openpy_addrb_reg[0]' (FDRE) to 'astar_gnps_i/openpy_addrb_reg[1]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/openpy_addrb_reg[1]' (FDRE) to 'astar_gnps_i/openpy_addrb_reg[2]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/openpy_addrb_reg[2]' (FDRE) to 'astar_gnps_i/openpy_addrb_reg[3]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/openpy_addrb_reg[3]' (FDRE) to 'astar_gnps_i/openpy_addrb_reg[4]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/openpy_addrb_reg[4]' (FDRE) to 'astar_gnps_i/openpy_addrb_reg[5]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/openpy_addrb_reg[5]' (FDRE) to 'astar_gnps_i/openpy_addrb_reg[6]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/openpy_addrb_reg[6]' (FDRE) to 'astar_gnps_i/openpy_addrb_reg[7]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/openpy_addrb_reg[7]' (FDRE) to 'astar_gnps_i/openpy_addrb_reg[8]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/openpy_addrb_reg[8]' (FDRE) to 'astar_gnps_i/openpy_addrb_reg[9]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/openpy_addrb_reg[9]' (FDRE) to 'astar_gnps_i/openpy_addrb_reg[10]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/openpy_addrb_reg[10]' (FDRE) to 'astar_gnps_i/openpy_addrb_reg[11]'
+INFO: [Synth 8-3886] merging instance 'astar_gnps_i/openpy_addrb_reg[11]' (FDRE) to 'astar_gnps_i/openpy_enb_reg'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (astar_gnps_i/openpy_enb_reg)
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1115.277 ; gain = 717.621
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_0_i/clk_in1' to pin 'IBUFGDS_i/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_0_i/clk_out1' to pin 'clk_wiz_0_i/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'clk_wiz_0_i/clk_in1' to 'IBUFGDS_i/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_0_i/clk_out2' to pin 'clk_wiz_0_i/bbstub_clk_out2/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'clk_wiz_0_i/clk_in1' to 'IBUFGDS_i/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_wiz_0_i/clk_out3' to pin 'clk_wiz_0_i/bbstub_clk_out3/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'clk_wiz_0_i/clk_in1' to 'IBUFGDS_i/O'
+INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1115.277 ; gain = 717.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:19 . Memory (MB): peak = 1308.477 ; gain = 910.820
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 1318.766 ; gain = 921.109
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 1318.766 ; gain = 921.109
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 1318.766 ; gain = 921.109
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:20 ; elapsed = 00:01:22 . Memory (MB): peak = 1318.766 ; gain = 921.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:20 ; elapsed = 00:01:22 . Memory (MB): peak = 1318.766 ; gain = 921.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:20 ; elapsed = 00:01:22 . Memory (MB): peak = 1318.766 ; gain = 921.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:20 ; elapsed = 00:01:22 . Memory (MB): peak = 1318.766 ; gain = 921.109
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |mapram1       |         1|
+|2     |closeram8     |         2|
+|3     |openram8      |         4|
+|4     |openram12     |         4|
+|5     |ila_astar     |         1|
+|6     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |clk_wiz_0    |     1|
+|2     |closeram8    |     1|
+|3     |closeram8__2 |     1|
+|4     |ila_astar    |     1|
+|5     |mapram1      |     1|
+|6     |openram12    |     1|
+|7     |openram12__4 |     1|
+|8     |openram12__5 |     1|
+|9     |openram12__6 |     1|
+|10    |openram8     |     1|
+|11    |openram8__4  |     1|
+|12    |openram8__5  |     1|
+|13    |openram8__6  |     1|
+|14    |CARRY4       |   160|
+|15    |LUT1         |    89|
+|16    |LUT2         |   309|
+|17    |LUT3         |   158|
+|18    |LUT4         |   274|
+|19    |LUT5         |   175|
+|20    |LUT6         |   568|
+|21    |MUXF7        |     2|
+|22    |FDRE         |   657|
+|23    |FDSE         |    27|
+|24    |IBUF         |     2|
+|25    |IBUFGDS      |     1|
+|26    |OBUF         |     3|
++------+-------------+------+
+
+Report Instance Areas: 
++------+---------------+-----------+------+
+|      |Instance       |Module     |Cells |
++------+---------------+-----------+------+
+|1     |top            |           |  2606|
+|2     |  astar_gnps_i |astar_gnps |  2409|
+|3     |  u_uart_rx    |uart_rx    |   107|
+|4     |  u_uart_tx    |uart_tx    |    79|
++------+---------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:20 ; elapsed = 00:01:22 . Memory (MB): peak = 1318.766 ; gain = 921.109
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:58 ; elapsed = 00:01:08 . Memory (MB): peak = 1318.766 ; gain = 418.891
+Synthesis Optimization Complete : Time (s): cpu = 00:01:20 ; elapsed = 00:01:22 . Memory (MB): peak = 1318.766 ; gain = 921.109
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 163 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'top_astargnps' is not ideal for floorplanning, since the cellview 'astar_gnps' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1318.766 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IBUFGDS => IBUFDS: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+197 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1318.766 ; gain = 922.781
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1318.766 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1/top_astargnps.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_astargnps_utilization_synth.rpt -pb top_astargnps_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 18 20:52:46 2022...

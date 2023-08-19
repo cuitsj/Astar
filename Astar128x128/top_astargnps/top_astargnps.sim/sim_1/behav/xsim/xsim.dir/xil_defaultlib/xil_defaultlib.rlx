@@ -1,0 +1,14 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sim_1/new/map_ram_tb.v,1652705302,verilog,,,,map_ram_tb,,,../../../../top_astargnps.srcs/sources_1/ip/clk_wiz_0,,,,,
+G:/01Astar/Asatr32x32/top_astargnps/top_astargnps.srcs/sim_1/new/openram8_tb.v,1652754895,verilog,,,,openram8_tb,,,../../../../top_astargnps.srcs/sources_1/ip/clk_wiz_0,,,,,
+G:/astar_gnps/top_astargnps/top_astargnps.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+G:/astar_gnps/top_astargnps/top_astargnps.srcs/sim_1/new/astar_gnps_tb.v,1652853928,verilog,,,,astar_gnps_tb,,,../../../../top_astargnps.srcs/sources_1/ip/clk_wiz_0,,,,,
+G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/sim/closeram8.v,1652799455,verilog,,G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1/sim/mapram1.v,,closeram8,,,../../../../top_astargnps.srcs/sources_1/ip/clk_wiz_0,,,,,
+G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/sim/ila_astar.v,1652799757,verilog,,G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/sim/openram12.v,,ila_astar,,,../../../../top_astargnps.srcs/sources_1/ip/clk_wiz_0,,,,,
+G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1/sim/mapram1.v,1652799313,verilog,,G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v,,mapram1,,,../../../../top_astargnps.srcs/sources_1/ip/clk_wiz_0,,,,,
+G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/sim/openram12.v,1652765842,verilog,,G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/sim/openram8.v,,openram12,,,../../../../top_astargnps.srcs/sources_1/ip/clk_wiz_0,,,,,
+G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/sim/openram8.v,1652765784,verilog,,G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/sim/closeram8.v,,openram8,,,../../../../top_astargnps.srcs/sources_1/ip/clk_wiz_0,,,,,
+G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v,1652861833,verilog,,G:/astar_gnps/top_astargnps/top_astargnps.srcs/sim_1/new/astar_gnps_tb.v,,astar_gnps,,,../../../../top_astargnps.srcs/sources_1/ip/clk_wiz_0,,,,,

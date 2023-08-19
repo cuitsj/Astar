@@ -1,0 +1,377 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May 18 10:19:27 2022
+# Process ID: 8508
+# Current directory: G:/astar_gnps/top_astargnps
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent860 G:\astar_gnps\top_astargnps\top_astargnps.xpr
+# Log file: G:/astar_gnps/top_astargnps/vivado.log
+# Journal file: G:/astar_gnps/top_astargnps\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/astar_gnps/top_astargnps/top_astargnps.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+report_property [get_ips  mapram1]
+report_property [get_ips  openram8]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_property [get_ips  mapram1]
+report_property [get_ips  openram8]
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {G:/astar_gnps/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+set_property PROBES.FILE {G:/astar_gnps/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/astar_gnps/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+set_property PROBES.FILE {G:/astar_gnps/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/astar_gnps/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {G:/astar_gnps/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top astar_gnps_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config G:/astar_gnps/top_astargnps/map_ram_tb_behav.wcfg
+source astar_gnps_tb.tcl
+current_wave_config {map_ram_tb_behav.wcfg}
+add_wave {{/astar_gnps_tb/u_astar_gnps/clk}} {{/astar_gnps_tb/u_astar_gnps/rst_n}} {{/astar_gnps_tb/u_astar_gnps/rxprocess_en}} {{/astar_gnps_tb/u_astar_gnps/rx_data}} {{/astar_gnps_tb/u_astar_gnps/tx_done}} {{/astar_gnps_tb/u_astar_gnps/tx_data}} {{/astar_gnps_tb/u_astar_gnps/tx_flag}} {{/astar_gnps_tb/u_astar_gnps/led0}} {{/astar_gnps_tb/u_astar_gnps/led1}} {{/astar_gnps_tb/u_astar_gnps/current_state}} {{/astar_gnps_tb/u_astar_gnps/e1}} {{/astar_gnps_tb/u_astar_gnps/e2}} {{/astar_gnps_tb/u_astar_gnps/e3}} {{/astar_gnps_tb/u_astar_gnps/e4}} {{/astar_gnps_tb/u_astar_gnps/e5}} {{/astar_gnps_tb/u_astar_gnps/e6}} {{/astar_gnps_tb/u_astar_gnps/e7}} {{/astar_gnps_tb/u_astar_gnps/e8}} {{/astar_gnps_tb/u_astar_gnps/e9}} {{/astar_gnps_tb/u_astar_gnps/e10}} {{/astar_gnps_tb/u_astar_gnps/e11}} {{/astar_gnps_tb/u_astar_gnps/e12}} {{/astar_gnps_tb/u_astar_gnps/e13}} {{/astar_gnps_tb/u_astar_gnps/e14}} {{/astar_gnps_tb/u_astar_gnps/e15}} {{/astar_gnps_tb/u_astar_gnps/e16}} {{/astar_gnps_tb/u_astar_gnps/e17}} {{/astar_gnps_tb/u_astar_gnps/e18}} {{/astar_gnps_tb/u_astar_gnps/e19}} {{/astar_gnps_tb/u_astar_gnps/e20}} {{/astar_gnps_tb/u_astar_gnps/e21}} {{/astar_gnps_tb/u_astar_gnps/e22}} {{/astar_gnps_tb/u_astar_gnps/e23}} {{/astar_gnps_tb/u_astar_gnps/e24}} {{/astar_gnps_tb/u_astar_gnps/e25}} {{/astar_gnps_tb/u_astar_gnps/e26}} {{/astar_gnps_tb/u_astar_gnps/e27}} {{/astar_gnps_tb/u_astar_gnps/e28}} {{/astar_gnps_tb/u_astar_gnps/e29}} {{/astar_gnps_tb/u_astar_gnps/e30}} {{/astar_gnps_tb/u_astar_gnps/e31}} {{/astar_gnps_tb/u_astar_gnps/e32}} {{/astar_gnps_tb/u_astar_gnps/e34}} {{/astar_gnps_tb/u_astar_gnps/e35}} {{/astar_gnps_tb/u_astar_gnps/e37_1}} {{/astar_gnps_tb/u_astar_gnps/e37_2}} {{/astar_gnps_tb/u_astar_gnps/e2_1}} {{/astar_gnps_tb/u_astar_gnps/e33}} {{/astar_gnps_tb/u_astar_gnps/e36}} {{/astar_gnps_tb/u_astar_gnps/rxprocess_flag}} {{/astar_gnps_tb/u_astar_gnps/rx_buff}} {{/astar_gnps_tb/u_astar_gnps/map_row}} {{/astar_gnps_tb/u_astar_gnps/map_column}} {{/astar_gnps_tb/u_astar_gnps/map_cntbit}} {{/astar_gnps_tb/u_astar_gnps/map_addra}} {{/astar_gnps_tb/u_astar_gnps/map_en}} {{/astar_gnps_tb/u_astar_gnps/map_wea}} {{/astar_gnps_tb/u_astar_gnps/map_dina}} {{/astar_gnps_tb/u_astar_gnps/map_douta}} {{/astar_gnps_tb/u_astar_gnps/parent_node}} {{/astar_gnps_tb/u_astar_gnps/close_row}} {{/astar_gnps_tb/u_astar_gnps/min_f}} {{/astar_gnps_tb/u_astar_gnps/close_ena}} {{/astar_gnps_tb/u_astar_gnps/close_wea}} {{/astar_gnps_tb/u_astar_gnps/close_addra}} {{/astar_gnps_tb/u_astar_gnps/close_addr1}} {{/astar_gnps_tb/u_astar_gnps/close_cyin}} {{/astar_gnps_tb/u_astar_gnps/close_cxin}} {{/astar_gnps_tb/u_astar_gnps/close_cyout}} {{/astar_gnps_tb/u_astar_gnps/close_cxout}} {{/astar_gnps_tb/u_astar_gnps/openpy_ena}} {{/astar_gnps_tb/u_astar_gnps/openpy_wea}} {{/astar_gnps_tb/u_astar_gnps/openpy_enb}} {{/astar_gnps_tb/u_astar_gnps/openpy_web}} {{/astar_gnps_tb/u_astar_gnps/openpx_ena}} {{/astar_gnps_tb/u_astar_gnps/openpx_wea}} {{/astar_gnps_tb/u_astar_gnps/openpx_enb}} {{/astar_gnps_tb/u_astar_gnps/openpx_web}} {{/astar_gnps_tb/u_astar_gnps/opency_ena}} {{/astar_gnps_tb/u_astar_gnps/opency_wea}} {{/astar_gnps_tb/u_astar_gnps/opency_enb}} {{/astar_gnps_tb/u_astar_gnps/opency_web}} {{/astar_gnps_tb/u_astar_gnps/opencx_ena}} {{/astar_gnps_tb/u_astar_gnps/opencx_wea}} {{/astar_gnps_tb/u_astar_gnps/opencx_enb}} {{/astar_gnps_tb/u_astar_gnps/opencx_web}} {{/astar_gnps_tb/u_astar_gnps/openg1_ena}} {{/astar_gnps_tb/u_astar_gnps/openg1_wea}} {{/astar_gnps_tb/u_astar_gnps/openg1_enb}} {{/astar_gnps_tb/u_astar_gnps/openg1_web}} {{/astar_gnps_tb/u_astar_gnps/openg2_ena}} {{/astar_gnps_tb/u_astar_gnps/openg2_wea}} {{/astar_gnps_tb/u_astar_gnps/openg2_enb}} {{/astar_gnps_tb/u_astar_gnps/openg2_web}} {{/astar_gnps_tb/u_astar_gnps/openh_ena}} {{/astar_gnps_tb/u_astar_gnps/openh_wea}} {{/astar_gnps_tb/u_astar_gnps/openh_enb}} {{/astar_gnps_tb/u_astar_gnps/openh_web}} {{/astar_gnps_tb/u_astar_gnps/openf_ena}} {{/astar_gnps_tb/u_astar_gnps/openf_wea}} {{/astar_gnps_tb/u_astar_gnps/openf_enb}} {{/astar_gnps_tb/u_astar_gnps/openf_web}} {{/astar_gnps_tb/u_astar_gnps/openpy_addra}} {{/astar_gnps_tb/u_astar_gnps/openpy_addrb}} {{/astar_gnps_tb/u_astar_gnps/openpx_addra}} {{/astar_gnps_tb/u_astar_gnps/openpx_addrb}} {{/astar_gnps_tb/u_astar_gnps/opency_addra}} {{/astar_gnps_tb/u_astar_gnps/opency_addrb}} {{/astar_gnps_tb/u_astar_gnps/opencx_addra}} {{/astar_gnps_tb/u_astar_gnps/opencx_addrb}} {{/astar_gnps_tb/u_astar_gnps/openg1_addra}} {{/astar_gnps_tb/u_astar_gnps/openg1_addrb}} {{/astar_gnps_tb/u_astar_gnps/openg2_addra}} {{/astar_gnps_tb/u_astar_gnps/openg2_addrb}} {{/astar_gnps_tb/u_astar_gnps/openh_addra}} {{/astar_gnps_tb/u_astar_gnps/openh_addrb}} {{/astar_gnps_tb/u_astar_gnps/openf_addra}} {{/astar_gnps_tb/u_astar_gnps/openf_addrb}} {{/astar_gnps_tb/u_astar_gnps/openpy_dina}} {{/astar_gnps_tb/u_astar_gnps/openpy_dinb}} {{/astar_gnps_tb/u_astar_gnps/openpx_dina}} {{/astar_gnps_tb/u_astar_gnps/openpx_dinb}} {{/astar_gnps_tb/u_astar_gnps/opency_dina}} {{/astar_gnps_tb/u_astar_gnps/opency_dinb}} {{/astar_gnps_tb/u_astar_gnps/opencx_dina}} {{/astar_gnps_tb/u_astar_gnps/opencx_dinb}} {{/astar_gnps_tb/u_astar_gnps/openg1_dina}} {{/astar_gnps_tb/u_astar_gnps/openg1_dinb}} {{/astar_gnps_tb/u_astar_gnps/openg2_dina}} {{/astar_gnps_tb/u_astar_gnps/openg2_dinb}} {{/astar_gnps_tb/u_astar_gnps/openh_dina}} {{/astar_gnps_tb/u_astar_gnps/openh_dinb}} {{/astar_gnps_tb/u_astar_gnps/openf_dina}} {{/astar_gnps_tb/u_astar_gnps/openf_dinb}} {{/astar_gnps_tb/u_astar_gnps/openpy_douta}} {{/astar_gnps_tb/u_astar_gnps/openpy_doutb}} {{/astar_gnps_tb/u_astar_gnps/openpx_douta}} {{/astar_gnps_tb/u_astar_gnps/openpx_doutb}} {{/astar_gnps_tb/u_astar_gnps/opency_douta}} {{/astar_gnps_tb/u_astar_gnps/opency_doutb}} {{/astar_gnps_tb/u_astar_gnps/opencx_douta}} {{/astar_gnps_tb/u_astar_gnps/opencx_doutb}} {{/astar_gnps_tb/u_astar_gnps/openg1_douta}} {{/astar_gnps_tb/u_astar_gnps/openg1_doutb}} {{/astar_gnps_tb/u_astar_gnps/openg2_douta}} {{/astar_gnps_tb/u_astar_gnps/openg2_doutb}} {{/astar_gnps_tb/u_astar_gnps/openh_douta}} {{/astar_gnps_tb/u_astar_gnps/openh_doutb}} {{/astar_gnps_tb/u_astar_gnps/openf_douta}} {{/astar_gnps_tb/u_astar_gnps/openf_doutb}} {{/astar_gnps_tb/u_astar_gnps/child_cnt}} {{/astar_gnps_tb/u_astar_gnps/new_child1}} {{/astar_gnps_tb/u_astar_gnps/new_child2}} {{/astar_gnps_tb/u_astar_gnps/new_child3}} {{/astar_gnps_tb/u_astar_gnps/new_child4}} {{/astar_gnps_tb/u_astar_gnps/new_child5}} {{/astar_gnps_tb/u_astar_gnps/new_child6}} {{/astar_gnps_tb/u_astar_gnps/new_child7}} {{/astar_gnps_tb/u_astar_gnps/new_child8}} {{/astar_gnps_tb/u_astar_gnps/obs_flag1}} {{/astar_gnps_tb/u_astar_gnps/obs_flag2}} {{/astar_gnps_tb/u_astar_gnps/obs_flag3}} {{/astar_gnps_tb/u_astar_gnps/obs_flag4}} {{/astar_gnps_tb/u_astar_gnps/obs_flag5}} {{/astar_gnps_tb/u_astar_gnps/obs_flag6}} {{/astar_gnps_tb/u_astar_gnps/obs_flag7}} {{/astar_gnps_tb/u_astar_gnps/obs_flag8}} {{/astar_gnps_tb/u_astar_gnps/child_flag1}} {{/astar_gnps_tb/u_astar_gnps/child_flag2}} {{/astar_gnps_tb/u_astar_gnps/child_flag3}} {{/astar_gnps_tb/u_astar_gnps/child_flag4}} {{/astar_gnps_tb/u_astar_gnps/child_flag5}} {{/astar_gnps_tb/u_astar_gnps/child_flag6}} {{/astar_gnps_tb/u_astar_gnps/child_flag7}} {{/astar_gnps_tb/u_astar_gnps/child_flag8}} {{/astar_gnps_tb/u_astar_gnps/child_node1}} {{/astar_gnps_tb/u_astar_gnps/child_node2}} {{/astar_gnps_tb/u_astar_gnps/child_node3}} {{/astar_gnps_tb/u_astar_gnps/child_node4}} {{/astar_gnps_tb/u_astar_gnps/child_node5}} {{/astar_gnps_tb/u_astar_gnps/child_node6}} {{/astar_gnps_tb/u_astar_gnps/child_node7}} {{/astar_gnps_tb/u_astar_gnps/child_node8}} {{/astar_gnps_tb/u_astar_gnps/open_row}} {{/astar_gnps_tb/u_astar_gnps/openreal_row}} {{/astar_gnps_tb/u_astar_gnps/open_addr1}} {{/astar_gnps_tb/u_astar_gnps/open_addr2}} {{/astar_gnps_tb/u_astar_gnps/open_addr3}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag1}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag2}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag3}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag4}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag5}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag6}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag7}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag8}} {{/astar_gnps_tb/u_astar_gnps/findpath_flag}} {{/astar_gnps_tb/u_astar_gnps/path_row}} {{/astar_gnps_tb/u_astar_gnps/path_column}} {{/astar_gnps_tb/u_astar_gnps/tx_cnt}} 
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+current_wave_config {map_ram_tb_behav.wcfg}
+add_wave {{/astar_gnps_tb/u_astar_gnps/clk}} {{/astar_gnps_tb/u_astar_gnps/rst_n}} {{/astar_gnps_tb/u_astar_gnps/rxprocess_en}} {{/astar_gnps_tb/u_astar_gnps/rx_data}} {{/astar_gnps_tb/u_astar_gnps/tx_done}} {{/astar_gnps_tb/u_astar_gnps/tx_data}} {{/astar_gnps_tb/u_astar_gnps/tx_flag}} {{/astar_gnps_tb/u_astar_gnps/led0}} {{/astar_gnps_tb/u_astar_gnps/led1}} {{/astar_gnps_tb/u_astar_gnps/current_state}} {{/astar_gnps_tb/u_astar_gnps/e1}} {{/astar_gnps_tb/u_astar_gnps/e2}} {{/astar_gnps_tb/u_astar_gnps/e3}} {{/astar_gnps_tb/u_astar_gnps/e4}} {{/astar_gnps_tb/u_astar_gnps/e5}} {{/astar_gnps_tb/u_astar_gnps/e6}} {{/astar_gnps_tb/u_astar_gnps/e7}} {{/astar_gnps_tb/u_astar_gnps/e8}} {{/astar_gnps_tb/u_astar_gnps/e9}} {{/astar_gnps_tb/u_astar_gnps/e10}} {{/astar_gnps_tb/u_astar_gnps/e11}} {{/astar_gnps_tb/u_astar_gnps/e12}} {{/astar_gnps_tb/u_astar_gnps/e13}} {{/astar_gnps_tb/u_astar_gnps/e14}} {{/astar_gnps_tb/u_astar_gnps/e15}} {{/astar_gnps_tb/u_astar_gnps/e16}} {{/astar_gnps_tb/u_astar_gnps/e17}} {{/astar_gnps_tb/u_astar_gnps/e18}} {{/astar_gnps_tb/u_astar_gnps/e19}} {{/astar_gnps_tb/u_astar_gnps/e20}} {{/astar_gnps_tb/u_astar_gnps/e21}} {{/astar_gnps_tb/u_astar_gnps/e22}} {{/astar_gnps_tb/u_astar_gnps/e23}} {{/astar_gnps_tb/u_astar_gnps/e24}} {{/astar_gnps_tb/u_astar_gnps/e25}} {{/astar_gnps_tb/u_astar_gnps/e26}} {{/astar_gnps_tb/u_astar_gnps/e27}} {{/astar_gnps_tb/u_astar_gnps/e28}} {{/astar_gnps_tb/u_astar_gnps/e29}} {{/astar_gnps_tb/u_astar_gnps/e30}} {{/astar_gnps_tb/u_astar_gnps/e31}} {{/astar_gnps_tb/u_astar_gnps/e32}} {{/astar_gnps_tb/u_astar_gnps/e34}} {{/astar_gnps_tb/u_astar_gnps/e35}} {{/astar_gnps_tb/u_astar_gnps/e37_1}} {{/astar_gnps_tb/u_astar_gnps/e37_2}} {{/astar_gnps_tb/u_astar_gnps/e2_1}} {{/astar_gnps_tb/u_astar_gnps/e33}} {{/astar_gnps_tb/u_astar_gnps/e36}} {{/astar_gnps_tb/u_astar_gnps/rxprocess_flag}} {{/astar_gnps_tb/u_astar_gnps/rx_buff}} {{/astar_gnps_tb/u_astar_gnps/map_row}} {{/astar_gnps_tb/u_astar_gnps/map_column}} {{/astar_gnps_tb/u_astar_gnps/map_cntbit}} {{/astar_gnps_tb/u_astar_gnps/map_addra}} {{/astar_gnps_tb/u_astar_gnps/map_en}} {{/astar_gnps_tb/u_astar_gnps/map_wea}} {{/astar_gnps_tb/u_astar_gnps/map_dina}} {{/astar_gnps_tb/u_astar_gnps/map_douta}} {{/astar_gnps_tb/u_astar_gnps/parent_node}} {{/astar_gnps_tb/u_astar_gnps/close_row}} {{/astar_gnps_tb/u_astar_gnps/min_f}} {{/astar_gnps_tb/u_astar_gnps/close_ena}} {{/astar_gnps_tb/u_astar_gnps/close_wea}} {{/astar_gnps_tb/u_astar_gnps/close_addra}} {{/astar_gnps_tb/u_astar_gnps/close_addr1}} {{/astar_gnps_tb/u_astar_gnps/close_cyin}} {{/astar_gnps_tb/u_astar_gnps/close_cxin}} {{/astar_gnps_tb/u_astar_gnps/close_cyout}} {{/astar_gnps_tb/u_astar_gnps/close_cxout}} {{/astar_gnps_tb/u_astar_gnps/openpy_ena}} {{/astar_gnps_tb/u_astar_gnps/openpy_wea}} {{/astar_gnps_tb/u_astar_gnps/openpy_enb}} {{/astar_gnps_tb/u_astar_gnps/openpy_web}} {{/astar_gnps_tb/u_astar_gnps/openpx_ena}} {{/astar_gnps_tb/u_astar_gnps/openpx_wea}} {{/astar_gnps_tb/u_astar_gnps/openpx_enb}} {{/astar_gnps_tb/u_astar_gnps/openpx_web}} {{/astar_gnps_tb/u_astar_gnps/opency_ena}} {{/astar_gnps_tb/u_astar_gnps/opency_wea}} {{/astar_gnps_tb/u_astar_gnps/opency_enb}} {{/astar_gnps_tb/u_astar_gnps/opency_web}} {{/astar_gnps_tb/u_astar_gnps/opencx_ena}} {{/astar_gnps_tb/u_astar_gnps/opencx_wea}} {{/astar_gnps_tb/u_astar_gnps/opencx_enb}} {{/astar_gnps_tb/u_astar_gnps/opencx_web}} {{/astar_gnps_tb/u_astar_gnps/openg1_ena}} {{/astar_gnps_tb/u_astar_gnps/openg1_wea}} {{/astar_gnps_tb/u_astar_gnps/openg1_enb}} {{/astar_gnps_tb/u_astar_gnps/openg1_web}} {{/astar_gnps_tb/u_astar_gnps/openg2_ena}} {{/astar_gnps_tb/u_astar_gnps/openg2_wea}} {{/astar_gnps_tb/u_astar_gnps/openg2_enb}} {{/astar_gnps_tb/u_astar_gnps/openg2_web}} {{/astar_gnps_tb/u_astar_gnps/openh_ena}} {{/astar_gnps_tb/u_astar_gnps/openh_wea}} {{/astar_gnps_tb/u_astar_gnps/openh_enb}} {{/astar_gnps_tb/u_astar_gnps/openh_web}} {{/astar_gnps_tb/u_astar_gnps/openf_ena}} {{/astar_gnps_tb/u_astar_gnps/openf_wea}} {{/astar_gnps_tb/u_astar_gnps/openf_enb}} {{/astar_gnps_tb/u_astar_gnps/openf_web}} {{/astar_gnps_tb/u_astar_gnps/openpy_addra}} {{/astar_gnps_tb/u_astar_gnps/openpy_addrb}} {{/astar_gnps_tb/u_astar_gnps/openpx_addra}} {{/astar_gnps_tb/u_astar_gnps/openpx_addrb}} {{/astar_gnps_tb/u_astar_gnps/opency_addra}} {{/astar_gnps_tb/u_astar_gnps/opency_addrb}} {{/astar_gnps_tb/u_astar_gnps/opencx_addra}} {{/astar_gnps_tb/u_astar_gnps/opencx_addrb}} {{/astar_gnps_tb/u_astar_gnps/openg1_addra}} {{/astar_gnps_tb/u_astar_gnps/openg1_addrb}} {{/astar_gnps_tb/u_astar_gnps/openg2_addra}} {{/astar_gnps_tb/u_astar_gnps/openg2_addrb}} {{/astar_gnps_tb/u_astar_gnps/openh_addra}} {{/astar_gnps_tb/u_astar_gnps/openh_addrb}} {{/astar_gnps_tb/u_astar_gnps/openf_addra}} {{/astar_gnps_tb/u_astar_gnps/openf_addrb}} {{/astar_gnps_tb/u_astar_gnps/openpy_dina}} {{/astar_gnps_tb/u_astar_gnps/openpy_dinb}} {{/astar_gnps_tb/u_astar_gnps/openpx_dina}} {{/astar_gnps_tb/u_astar_gnps/openpx_dinb}} {{/astar_gnps_tb/u_astar_gnps/opency_dina}} {{/astar_gnps_tb/u_astar_gnps/opency_dinb}} {{/astar_gnps_tb/u_astar_gnps/opencx_dina}} {{/astar_gnps_tb/u_astar_gnps/opencx_dinb}} {{/astar_gnps_tb/u_astar_gnps/openg1_dina}} {{/astar_gnps_tb/u_astar_gnps/openg1_dinb}} {{/astar_gnps_tb/u_astar_gnps/openg2_dina}} {{/astar_gnps_tb/u_astar_gnps/openg2_dinb}} {{/astar_gnps_tb/u_astar_gnps/openh_dina}} {{/astar_gnps_tb/u_astar_gnps/openh_dinb}} {{/astar_gnps_tb/u_astar_gnps/openf_dina}} {{/astar_gnps_tb/u_astar_gnps/openf_dinb}} {{/astar_gnps_tb/u_astar_gnps/openpy_douta}} {{/astar_gnps_tb/u_astar_gnps/openpy_doutb}} {{/astar_gnps_tb/u_astar_gnps/openpx_douta}} {{/astar_gnps_tb/u_astar_gnps/openpx_doutb}} {{/astar_gnps_tb/u_astar_gnps/opency_douta}} {{/astar_gnps_tb/u_astar_gnps/opency_doutb}} {{/astar_gnps_tb/u_astar_gnps/opencx_douta}} {{/astar_gnps_tb/u_astar_gnps/opencx_doutb}} {{/astar_gnps_tb/u_astar_gnps/openg1_douta}} {{/astar_gnps_tb/u_astar_gnps/openg1_doutb}} {{/astar_gnps_tb/u_astar_gnps/openg2_douta}} {{/astar_gnps_tb/u_astar_gnps/openg2_doutb}} {{/astar_gnps_tb/u_astar_gnps/openh_douta}} {{/astar_gnps_tb/u_astar_gnps/openh_doutb}} {{/astar_gnps_tb/u_astar_gnps/openf_douta}} {{/astar_gnps_tb/u_astar_gnps/openf_doutb}} {{/astar_gnps_tb/u_astar_gnps/child_cnt}} {{/astar_gnps_tb/u_astar_gnps/new_child1}} {{/astar_gnps_tb/u_astar_gnps/new_child2}} {{/astar_gnps_tb/u_astar_gnps/new_child3}} {{/astar_gnps_tb/u_astar_gnps/new_child4}} {{/astar_gnps_tb/u_astar_gnps/new_child5}} {{/astar_gnps_tb/u_astar_gnps/new_child6}} {{/astar_gnps_tb/u_astar_gnps/new_child7}} {{/astar_gnps_tb/u_astar_gnps/new_child8}} {{/astar_gnps_tb/u_astar_gnps/obs_flag1}} {{/astar_gnps_tb/u_astar_gnps/obs_flag2}} {{/astar_gnps_tb/u_astar_gnps/obs_flag3}} {{/astar_gnps_tb/u_astar_gnps/obs_flag4}} {{/astar_gnps_tb/u_astar_gnps/obs_flag5}} {{/astar_gnps_tb/u_astar_gnps/obs_flag6}} {{/astar_gnps_tb/u_astar_gnps/obs_flag7}} {{/astar_gnps_tb/u_astar_gnps/obs_flag8}} {{/astar_gnps_tb/u_astar_gnps/child_flag1}} {{/astar_gnps_tb/u_astar_gnps/child_flag2}} {{/astar_gnps_tb/u_astar_gnps/child_flag3}} {{/astar_gnps_tb/u_astar_gnps/child_flag4}} {{/astar_gnps_tb/u_astar_gnps/child_flag5}} {{/astar_gnps_tb/u_astar_gnps/child_flag6}} {{/astar_gnps_tb/u_astar_gnps/child_flag7}} {{/astar_gnps_tb/u_astar_gnps/child_flag8}} {{/astar_gnps_tb/u_astar_gnps/child_node1}} {{/astar_gnps_tb/u_astar_gnps/child_node2}} {{/astar_gnps_tb/u_astar_gnps/child_node3}} {{/astar_gnps_tb/u_astar_gnps/child_node4}} {{/astar_gnps_tb/u_astar_gnps/child_node5}} {{/astar_gnps_tb/u_astar_gnps/child_node6}} {{/astar_gnps_tb/u_astar_gnps/child_node7}} {{/astar_gnps_tb/u_astar_gnps/child_node8}} {{/astar_gnps_tb/u_astar_gnps/open_row}} {{/astar_gnps_tb/u_astar_gnps/openreal_row}} {{/astar_gnps_tb/u_astar_gnps/open_addr1}} {{/astar_gnps_tb/u_astar_gnps/open_addr2}} {{/astar_gnps_tb/u_astar_gnps/open_addr3}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag1}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag2}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag3}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag4}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag5}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag6}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag7}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag8}} {{/astar_gnps_tb/u_astar_gnps/findpath_flag}} {{/astar_gnps_tb/u_astar_gnps/path_row}} {{/astar_gnps_tb/u_astar_gnps/path_column}} {{/astar_gnps_tb/u_astar_gnps/tx_cnt}} 
+run 10 us
+run 10 us
+run 10 us
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+save_wave_config {G:/astar_gnps/top_astargnps/map_ram_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config G:/astar_gnps/top_astargnps/map_ram_tb_behav.wcfg
+source astar_gnps_tb.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+report_property [get_ips  mapram1]
+save_wave_config {G:/astar_gnps/top_astargnps/map_ram_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config G:/astar_gnps/top_astargnps/map_ram_tb_behav.wcfg
+source astar_gnps_tb.tcl
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+open_wave_config G:/astar_gnps/top_astargnps/map_ram_tb_behav.wcfg
+source astar_gnps_tb.tcl
+restart
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+open_wave_config G:/astar_gnps/top_astargnps/map_ram_tb_behav.wcfg
+source astar_gnps_tb.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+close_sim
+launch_simulation
+open_wave_config G:/astar_gnps/top_astargnps/map_ram_tb_behav.wcfg
+source astar_gnps_tb.tcl
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+run 10 us
+save_wave_config {G:/astar_gnps/top_astargnps/map_ram_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config G:/astar_gnps/top_astargnps/map_ram_tb_behav.wcfg
+source astar_gnps_tb.tcl
+run 10 us
+run 10 us
+run 100 us
+run 100 us
+run 100 us
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {G:/astar_gnps/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/astar_gnps/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {G:/astar_gnps/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bB [get_hw_probes astar_gnps_i/findpath_flag_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+update_compile_order -fileset sources_1
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+close_sim
+launch_simulation
+refresh_design
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config G:/astar_gnps/top_astargnps/map_ram_tb_behav.wcfg
+source astar_gnps_tb.tcl
+run 100 us
+run 100 us
+run 100 us
+close_sim
+launch_simulation
+open_wave_config G:/astar_gnps/top_astargnps/map_ram_tb_behav.wcfg
+source astar_gnps_tb.tcl
+run 100 us
+run 100 us
+save_wave_config {G:/astar_gnps/top_astargnps/map_ram_tb_behav.wcfg}
+close_sim
+launch_simulation
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config G:/astar_gnps/top_astargnps/map_ram_tb_behav.wcfg
+source astar_gnps_tb.tcl
+run 100 us
+run 100 us
+run 100 us
+save_wave_config {G:/astar_gnps/top_astargnps/map_ram_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config G:/astar_gnps/top_astargnps/map_ram_tb_behav.wcfg
+source astar_gnps_tb.tcl
+current_wave_config {map_ram_tb_behav.wcfg}
+add_wave {{/astar_gnps_tb/clk2}} 
+restart
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+current_wave_config {map_ram_tb_behav.wcfg}
+add_wave {{/astar_gnps_tb/u_astar_gnps/clk}} {{/astar_gnps_tb/u_astar_gnps/clk2}} {{/astar_gnps_tb/u_astar_gnps/rst_n}} {{/astar_gnps_tb/u_astar_gnps/rxprocess_en}} {{/astar_gnps_tb/u_astar_gnps/rx_data}} {{/astar_gnps_tb/u_astar_gnps/tx_done}} {{/astar_gnps_tb/u_astar_gnps/tx_data}} {{/astar_gnps_tb/u_astar_gnps/tx_flag}} {{/astar_gnps_tb/u_astar_gnps/led0}} {{/astar_gnps_tb/u_astar_gnps/led1}} {{/astar_gnps_tb/u_astar_gnps/current_state}} {{/astar_gnps_tb/u_astar_gnps/e1}} {{/astar_gnps_tb/u_astar_gnps/e2}} {{/astar_gnps_tb/u_astar_gnps/e3}} {{/astar_gnps_tb/u_astar_gnps/e4}} {{/astar_gnps_tb/u_astar_gnps/e5}} {{/astar_gnps_tb/u_astar_gnps/e6}} {{/astar_gnps_tb/u_astar_gnps/e7}} {{/astar_gnps_tb/u_astar_gnps/e8}} {{/astar_gnps_tb/u_astar_gnps/e9}} {{/astar_gnps_tb/u_astar_gnps/e10}} {{/astar_gnps_tb/u_astar_gnps/e11}} {{/astar_gnps_tb/u_astar_gnps/e12}} {{/astar_gnps_tb/u_astar_gnps/e13}} {{/astar_gnps_tb/u_astar_gnps/e14}} {{/astar_gnps_tb/u_astar_gnps/e15}} {{/astar_gnps_tb/u_astar_gnps/e16}} {{/astar_gnps_tb/u_astar_gnps/e17}} {{/astar_gnps_tb/u_astar_gnps/e18}} {{/astar_gnps_tb/u_astar_gnps/e19}} {{/astar_gnps_tb/u_astar_gnps/e20}} {{/astar_gnps_tb/u_astar_gnps/e21}} {{/astar_gnps_tb/u_astar_gnps/e22}} {{/astar_gnps_tb/u_astar_gnps/e23}} {{/astar_gnps_tb/u_astar_gnps/e24}} {{/astar_gnps_tb/u_astar_gnps/e25}} {{/astar_gnps_tb/u_astar_gnps/e26}} {{/astar_gnps_tb/u_astar_gnps/e27}} {{/astar_gnps_tb/u_astar_gnps/e28}} {{/astar_gnps_tb/u_astar_gnps/e29}} {{/astar_gnps_tb/u_astar_gnps/e30}} {{/astar_gnps_tb/u_astar_gnps/e31}} {{/astar_gnps_tb/u_astar_gnps/e32}} {{/astar_gnps_tb/u_astar_gnps/e34}} {{/astar_gnps_tb/u_astar_gnps/e35}} {{/astar_gnps_tb/u_astar_gnps/e37_1}} {{/astar_gnps_tb/u_astar_gnps/e37_2}} {{/astar_gnps_tb/u_astar_gnps/e2_1}} {{/astar_gnps_tb/u_astar_gnps/e33}} {{/astar_gnps_tb/u_astar_gnps/e36}} {{/astar_gnps_tb/u_astar_gnps/rxprocess_flag}} {{/astar_gnps_tb/u_astar_gnps/rx_buff}} {{/astar_gnps_tb/u_astar_gnps/map_row}} {{/astar_gnps_tb/u_astar_gnps/map_column}} {{/astar_gnps_tb/u_astar_gnps/map_cntbit}} {{/astar_gnps_tb/u_astar_gnps/map_addra}} {{/astar_gnps_tb/u_astar_gnps/map_en}} {{/astar_gnps_tb/u_astar_gnps/map_wea}} {{/astar_gnps_tb/u_astar_gnps/map_dina}} {{/astar_gnps_tb/u_astar_gnps/map_douta}} {{/astar_gnps_tb/u_astar_gnps/parent_node}} {{/astar_gnps_tb/u_astar_gnps/close_row}} {{/astar_gnps_tb/u_astar_gnps/min_f}} {{/astar_gnps_tb/u_astar_gnps/close_ena}} {{/astar_gnps_tb/u_astar_gnps/close_wea}} {{/astar_gnps_tb/u_astar_gnps/close_addra}} {{/astar_gnps_tb/u_astar_gnps/close_addr1}} {{/astar_gnps_tb/u_astar_gnps/close_cyin}} {{/astar_gnps_tb/u_astar_gnps/close_cxin}} {{/astar_gnps_tb/u_astar_gnps/close_cyout}} {{/astar_gnps_tb/u_astar_gnps/close_cxout}} {{/astar_gnps_tb/u_astar_gnps/openpy_ena}} {{/astar_gnps_tb/u_astar_gnps/openpy_wea}} {{/astar_gnps_tb/u_astar_gnps/openpy_enb}} {{/astar_gnps_tb/u_astar_gnps/openpy_web}} {{/astar_gnps_tb/u_astar_gnps/openpx_ena}} {{/astar_gnps_tb/u_astar_gnps/openpx_wea}} {{/astar_gnps_tb/u_astar_gnps/openpx_enb}} {{/astar_gnps_tb/u_astar_gnps/openpx_web}} {{/astar_gnps_tb/u_astar_gnps/opency_ena}} {{/astar_gnps_tb/u_astar_gnps/opency_wea}} {{/astar_gnps_tb/u_astar_gnps/opency_enb}} {{/astar_gnps_tb/u_astar_gnps/opency_web}} {{/astar_gnps_tb/u_astar_gnps/opencx_ena}} {{/astar_gnps_tb/u_astar_gnps/opencx_wea}} {{/astar_gnps_tb/u_astar_gnps/opencx_enb}} {{/astar_gnps_tb/u_astar_gnps/opencx_web}} {{/astar_gnps_tb/u_astar_gnps/openg1_ena}} {{/astar_gnps_tb/u_astar_gnps/openg1_wea}} {{/astar_gnps_tb/u_astar_gnps/openg1_enb}} {{/astar_gnps_tb/u_astar_gnps/openg1_web}} {{/astar_gnps_tb/u_astar_gnps/openg2_ena}} {{/astar_gnps_tb/u_astar_gnps/openg2_wea}} {{/astar_gnps_tb/u_astar_gnps/openg2_enb}} {{/astar_gnps_tb/u_astar_gnps/openg2_web}} {{/astar_gnps_tb/u_astar_gnps/openh_ena}} {{/astar_gnps_tb/u_astar_gnps/openh_wea}} {{/astar_gnps_tb/u_astar_gnps/openh_enb}} {{/astar_gnps_tb/u_astar_gnps/openh_web}} {{/astar_gnps_tb/u_astar_gnps/openf_ena}} {{/astar_gnps_tb/u_astar_gnps/openf_wea}} {{/astar_gnps_tb/u_astar_gnps/openf_enb}} {{/astar_gnps_tb/u_astar_gnps/openf_web}} {{/astar_gnps_tb/u_astar_gnps/openpy_addra}} {{/astar_gnps_tb/u_astar_gnps/openpy_addrb}} {{/astar_gnps_tb/u_astar_gnps/openpx_addra}} {{/astar_gnps_tb/u_astar_gnps/openpx_addrb}} {{/astar_gnps_tb/u_astar_gnps/opency_addra}} {{/astar_gnps_tb/u_astar_gnps/opency_addrb}} {{/astar_gnps_tb/u_astar_gnps/opencx_addra}} {{/astar_gnps_tb/u_astar_gnps/opencx_addrb}} {{/astar_gnps_tb/u_astar_gnps/openg1_addra}} {{/astar_gnps_tb/u_astar_gnps/openg1_addrb}} {{/astar_gnps_tb/u_astar_gnps/openg2_addra}} {{/astar_gnps_tb/u_astar_gnps/openg2_addrb}} {{/astar_gnps_tb/u_astar_gnps/openh_addra}} {{/astar_gnps_tb/u_astar_gnps/openh_addrb}} {{/astar_gnps_tb/u_astar_gnps/openf_addra}} {{/astar_gnps_tb/u_astar_gnps/openf_addrb}} {{/astar_gnps_tb/u_astar_gnps/openpy_dina}} {{/astar_gnps_tb/u_astar_gnps/openpy_dinb}} {{/astar_gnps_tb/u_astar_gnps/openpx_dina}} {{/astar_gnps_tb/u_astar_gnps/openpx_dinb}} {{/astar_gnps_tb/u_astar_gnps/opency_dina}} {{/astar_gnps_tb/u_astar_gnps/opency_dinb}} {{/astar_gnps_tb/u_astar_gnps/opencx_dina}} {{/astar_gnps_tb/u_astar_gnps/opencx_dinb}} {{/astar_gnps_tb/u_astar_gnps/openg1_dina}} {{/astar_gnps_tb/u_astar_gnps/openg1_dinb}} {{/astar_gnps_tb/u_astar_gnps/openg2_dina}} {{/astar_gnps_tb/u_astar_gnps/openg2_dinb}} {{/astar_gnps_tb/u_astar_gnps/openh_dina}} {{/astar_gnps_tb/u_astar_gnps/openh_dinb}} {{/astar_gnps_tb/u_astar_gnps/openf_dina}} {{/astar_gnps_tb/u_astar_gnps/openf_dinb}} {{/astar_gnps_tb/u_astar_gnps/openpy_douta}} {{/astar_gnps_tb/u_astar_gnps/openpy_doutb}} {{/astar_gnps_tb/u_astar_gnps/openpx_douta}} {{/astar_gnps_tb/u_astar_gnps/openpx_doutb}} {{/astar_gnps_tb/u_astar_gnps/opency_douta}} {{/astar_gnps_tb/u_astar_gnps/opency_doutb}} {{/astar_gnps_tb/u_astar_gnps/opencx_douta}} {{/astar_gnps_tb/u_astar_gnps/opencx_doutb}} {{/astar_gnps_tb/u_astar_gnps/openg1_douta}} {{/astar_gnps_tb/u_astar_gnps/openg1_doutb}} {{/astar_gnps_tb/u_astar_gnps/openg2_douta}} {{/astar_gnps_tb/u_astar_gnps/openg2_doutb}} {{/astar_gnps_tb/u_astar_gnps/openh_douta}} {{/astar_gnps_tb/u_astar_gnps/openh_doutb}} {{/astar_gnps_tb/u_astar_gnps/openf_douta}} {{/astar_gnps_tb/u_astar_gnps/openf_doutb}} {{/astar_gnps_tb/u_astar_gnps/child_cnt}} {{/astar_gnps_tb/u_astar_gnps/new_child1}} {{/astar_gnps_tb/u_astar_gnps/new_child2}} {{/astar_gnps_tb/u_astar_gnps/new_child3}} {{/astar_gnps_tb/u_astar_gnps/new_child4}} {{/astar_gnps_tb/u_astar_gnps/new_child5}} {{/astar_gnps_tb/u_astar_gnps/new_child6}} {{/astar_gnps_tb/u_astar_gnps/new_child7}} {{/astar_gnps_tb/u_astar_gnps/new_child8}} {{/astar_gnps_tb/u_astar_gnps/obs_flag1}} {{/astar_gnps_tb/u_astar_gnps/obs_flag2}} {{/astar_gnps_tb/u_astar_gnps/obs_flag3}} {{/astar_gnps_tb/u_astar_gnps/obs_flag4}} {{/astar_gnps_tb/u_astar_gnps/obs_flag5}} {{/astar_gnps_tb/u_astar_gnps/obs_flag6}} {{/astar_gnps_tb/u_astar_gnps/obs_flag7}} {{/astar_gnps_tb/u_astar_gnps/obs_flag8}} {{/astar_gnps_tb/u_astar_gnps/child_flag1}} {{/astar_gnps_tb/u_astar_gnps/child_flag2}} {{/astar_gnps_tb/u_astar_gnps/child_flag3}} {{/astar_gnps_tb/u_astar_gnps/child_flag4}} {{/astar_gnps_tb/u_astar_gnps/child_flag5}} {{/astar_gnps_tb/u_astar_gnps/child_flag6}} {{/astar_gnps_tb/u_astar_gnps/child_flag7}} {{/astar_gnps_tb/u_astar_gnps/child_flag8}} {{/astar_gnps_tb/u_astar_gnps/child_node1}} {{/astar_gnps_tb/u_astar_gnps/child_node2}} {{/astar_gnps_tb/u_astar_gnps/child_node3}} {{/astar_gnps_tb/u_astar_gnps/child_node4}} {{/astar_gnps_tb/u_astar_gnps/child_node5}} {{/astar_gnps_tb/u_astar_gnps/child_node6}} {{/astar_gnps_tb/u_astar_gnps/child_node7}} {{/astar_gnps_tb/u_astar_gnps/child_node8}} {{/astar_gnps_tb/u_astar_gnps/open_row}} {{/astar_gnps_tb/u_astar_gnps/openreal_row}} {{/astar_gnps_tb/u_astar_gnps/open_addr1}} {{/astar_gnps_tb/u_astar_gnps/open_addr2}} {{/astar_gnps_tb/u_astar_gnps/open_addr3}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag1}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag2}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag3}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag4}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag5}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag6}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag7}} {{/astar_gnps_tb/u_astar_gnps/inopen_flag8}} {{/astar_gnps_tb/u_astar_gnps/findpath_flag}} {{/astar_gnps_tb/u_astar_gnps/path_row}} {{/astar_gnps_tb/u_astar_gnps/path_column}} {{/astar_gnps_tb/u_astar_gnps/tx_cnt}} {{/astar_gnps_tb/u_astar_gnps/MAP_ROW}} {{/astar_gnps_tb/u_astar_gnps/MAP_COLUMN}} {{/astar_gnps_tb/u_astar_gnps/MAP_EXP}} {{/astar_gnps_tb/u_astar_gnps/START_ROW}} {{/astar_gnps_tb/u_astar_gnps/START_COLUMN}} {{/astar_gnps_tb/u_astar_gnps/END_ROW}} {{/astar_gnps_tb/u_astar_gnps/END_COLUMN}} {{/astar_gnps_tb/u_astar_gnps/S0}} {{/astar_gnps_tb/u_astar_gnps/S1}} {{/astar_gnps_tb/u_astar_gnps/S2}} {{/astar_gnps_tb/u_astar_gnps/S3}} {{/astar_gnps_tb/u_astar_gnps/S4}} {{/astar_gnps_tb/u_astar_gnps/S5}} {{/astar_gnps_tb/u_astar_gnps/S6}} {{/astar_gnps_tb/u_astar_gnps/S7}} {{/astar_gnps_tb/u_astar_gnps/S8}} {{/astar_gnps_tb/u_astar_gnps/S9}} {{/astar_gnps_tb/u_astar_gnps/S10}} {{/astar_gnps_tb/u_astar_gnps/S11}} {{/astar_gnps_tb/u_astar_gnps/S12}} {{/astar_gnps_tb/u_astar_gnps/S13}} {{/astar_gnps_tb/u_astar_gnps/S14}} {{/astar_gnps_tb/u_astar_gnps/S15}} {{/astar_gnps_tb/u_astar_gnps/S16}} {{/astar_gnps_tb/u_astar_gnps/S17}} {{/astar_gnps_tb/u_astar_gnps/S18}} {{/astar_gnps_tb/u_astar_gnps/S19}} {{/astar_gnps_tb/u_astar_gnps/S20}} {{/astar_gnps_tb/u_astar_gnps/S21}} {{/astar_gnps_tb/u_astar_gnps/S22}} 
+restart
+run 100 us
+run 100 us
+run 100 us
+restart
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+save_wave_config {G:/astar_gnps/top_astargnps/map_ram_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config G:/astar_gnps/top_astargnps/map_ram_tb_behav.wcfg
+source astar_gnps_tb.tcl
+run 100 us
+run 100 us
+run 100 us
+run 100 us
+set_property -dict [list CONFIG.CLKOUT4_USED {true} CONFIG.CLKOUT4_REQUESTED_OUT_FREQ {50} CONFIG.CLKOUT4_REQUESTED_PHASE {180} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT3_DIVIDE {20} CONFIG.MMCM_CLKOUT3_PHASE {180.000} CONFIG.NUM_OUT_CLKS {4} CONFIG.CLKOUT4_JITTER {129.198} CONFIG.CLKOUT4_PHASE_ERROR {89.971}] [get_ips clk_wiz_0]
+generate_target all [get_files  G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_0_synth_1
+launch_runs -jobs 4 clk_wiz_0_synth_1
+export_simulation -of_objects [get_files G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {G:/astar_gnps/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/astar_gnps/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {G:/astar_gnps/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+wait_on_hw_ila -timeout 0 [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes astar_gnps_i/findpath_flag_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+set_property TRIGGER_COMPARE_VALUE eq1'bB [get_hw_probes astar_gnps_i/led0_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+set_property CONTROL.TRIGGER_CONDITION OR [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+set_property -dict [list CONFIG.CLKOUT5_USED {true} CONFIG.CLKOUT6_USED {true} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {200} CONFIG.CLKOUT2_REQUESTED_PHASE {180} CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {100} CONFIG.CLKOUT4_REQUESTED_OUT_FREQ {100} CONFIG.CLKOUT5_REQUESTED_OUT_FREQ {50} CONFIG.CLKOUT6_REQUESTED_OUT_FREQ {50} CONFIG.CLKOUT6_REQUESTED_PHASE {180} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT1_DIVIDE {5} CONFIG.MMCM_CLKOUT1_PHASE {180.000} CONFIG.MMCM_CLKOUT2_DIVIDE {10} CONFIG.MMCM_CLKOUT3_DIVIDE {10} CONFIG.MMCM_CLKOUT4_DIVIDE {20} CONFIG.MMCM_CLKOUT5_DIVIDE {20} CONFIG.MMCM_CLKOUT5_PHASE {180.000} CONFIG.NUM_OUT_CLKS {6} CONFIG.CLKOUT2_JITTER {98.146} CONFIG.CLKOUT3_JITTER {112.316} CONFIG.CLKOUT4_JITTER {112.316} CONFIG.CLKOUT5_JITTER {129.198} CONFIG.CLKOUT5_PHASE_ERROR {89.971} CONFIG.CLKOUT6_JITTER {129.198} CONFIG.CLKOUT6_PHASE_ERROR {89.971}] [get_ips clk_wiz_0]
+generate_target all [get_files  G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_0_synth_1
+launch_runs -jobs 4 clk_wiz_0_synth_1
+export_simulation -of_objects [get_files G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {G:/astar_gnps/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/astar_gnps/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {G:/astar_gnps/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+report_property [get_ips ila_astar]
+set_property CONFIG.SIGNAL_CLOCK.FREQ_HZ  200000000
+set_property CONFIG.SIGNAL_CLOCK.FREQ_HZ  200000000 [get_ips ila_astar]
+report_property [get_ips ila_astar]
+report_property [get_ips mapram1]
+set_property CONFIG.Port_A_Write_Rate  200000000 [get_ips mapram1]
+set_property CONFIG.Port_A_Clock  200000000 [get_ips mapram1]
+set_property CONFIG.Port_A_Clock  200 [get_ips mapram1]
+set_property CONFIG.Port_A_Write_Rate  200 [get_ips mapram1]
+set_property CONFIG.Port_A_Enable_Rate  200 [get_ips mapram1]
+report_property [get_ips mapram1]
+set_property CONFIG.Port_A_Enable_Rate  200 [get_ips mapram1]
+set_property CONFIG.Port_A_Clock  100 [get_ips mapram1]
+set_property CONFIG.Port_A_Write_Rate  100 [get_ips mapram1]
+report_property [get_ips mapram1]
+reset_run ila_astar_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+report_property [get_ips mapram1]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+export_ip_user_files -of_objects  [get_files G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1/mapram1.xci] -no_script -reset -force -quiet
+remove_files  -fileset mapram1 G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1/mapram1.xci
+create_ip -name blk_mem_gen -vendor xilinx.com -library ip -version 8.4 -module_name mapram1 -dir g:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip
+set_property -dict [list CONFIG.Component_Name {mapram1} CONFIG.Write_Width_A {1} CONFIG.Write_Depth_A {4096} CONFIG.Read_Width_A {1} CONFIG.Write_Width_B {1} CONFIG.Read_Width_B {1} CONFIG.Register_PortA_Output_of_Memory_Primitives {false}] [get_ips mapram1]
+generate_target {instantiation_template} [get_files g:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1.xci]
+generate_target all [get_files  g:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1.xci]
+catch { config_ip_cache -export [get_ips -all mapram1] }
+export_ip_user_files -of_objects [get_files g:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] g:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1.xci]
+export_simulation -of_objects [get_files g:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1.xci] -directory G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run impl_1
+reset_target all [get_files  g:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1.xci]
+export_ip_user_files -of_objects  [get_files  g:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1.xci] -sync -no_script -force -quiet
+set_property generate_synth_checkpoint false [get_files  g:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1.xci]
+generate_target all [get_files  g:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1.xci]
+export_ip_user_files -of_objects [get_files g:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files g:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1.xci] -directory G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property generate_synth_checkpoint false [get_files  G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/closeram8.xci]
+generate_target all [get_files  G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/closeram8.xci]
+export_ip_user_files -of_objects [get_files G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/closeram8.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/closeram8.xci] -directory G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset openram8] G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8.xci]
+set_property generate_synth_checkpoint false [get_files  G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8.xci]
+generate_target all [get_files  G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8.xci]
+export_ip_user_files -of_objects [get_files G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8.xci] -directory G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property generate_synth_checkpoint false [get_files  G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12.xci]
+generate_target all [get_files  G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12.xci]
+export_ip_user_files -of_objects [get_files G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12.xci] -directory G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+delete_ip_run [get_files -of_objects [get_fileset ila_astar] G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_astar.xci]
+set_property generate_synth_checkpoint false [get_files  G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_astar.xci]
+generate_target all [get_files  G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_astar.xci]
+export_ip_user_files -of_objects [get_files G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_astar.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files G:/astar_gnps/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_astar.xci] -directory G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/astar_gnps/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/astar_gnps/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {G:/astar_gnps/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/astar_gnps/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {G:/astar_gnps/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {G:/astar_gnps/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/astar_gnps/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {G:/astar_gnps/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+close_sim
+save_wave_config {G:/astar_gnps/top_astargnps/top_astargnps.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {G:/astar_gnps/top_astargnps/top_astargnps.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}

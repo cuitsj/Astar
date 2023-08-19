@@ -1,0 +1,57 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dG:/Astar/sim
+T_opt
+!s110 1652354354
+VAoeN_ETHHV=Df464cYadi2
+04 13 4 work astar_gnps_tb fast 0
+=1-204747722f3c-627ced31-2a6-1c64
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OL;O;10.4;61
+R0
+vastar_gnps
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 UN@`nPY^CR=di]:464fF`1
+I`U:]lB^[Z_D:g>;kRTEbR2
+R0
+w1652354094
+8G:\Astar\sim\astar_gnps.v
+FG:\Astar\sim\astar_gnps.v
+L0 1
+Z2 OL;L;10.4;61
+!s108 1652354822.459000
+!s107 G:\Astar\sim\astar_gnps.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|G:\Astar\sim\astar_gnps.v|
+!i113 0
+Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vastar_gnps_tb
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 B1COgVSR:8DEMIfCWl8j43
+Imh:4>TfZeCiz88PEXgk6d2
+R0
+w1652354814
+8G:/Astar/sim/astar_gnps_tb.vt
+FG:/Astar/sim/astar_gnps_tb.vt
+L0 3
+R2
+!s108 1652354822.575000
+!s107 G:/Astar/sim/astar_gnps_tb.vt|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|G:/Astar/sim/astar_gnps_tb.vt|
+!i113 0
+R3

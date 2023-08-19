@@ -1,0 +1,704 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May 18 19:52:11 2022
+# Process ID: 13428
+# Current directory: G:/01Astar/Asatr64x64/top_astargnps
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15412 G:\01Astar\Asatr64x64\top_astargnps\top_astargnps.xpr
+# Log file: G:/01Astar/Asatr64x64/top_astargnps/vivado.log
+# Journal file: G:/01Astar/Asatr64x64/top_astargnps\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.xpr
+INFO: [Project 1-313] Project file moved from 'G:/astar_gnps/top_astargnps' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:12 . Memory (MB): peak = 829.445 ; gain = 220.430
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May 18 19:53:50 2022] Launched synth_1...
+Run output will be captured here: G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1/runme.log
+[Wed May 18 19:53:50 2022] Launched impl_1...
+Run output will be captured here: G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210249A14E25
+set_property PROGRAM.FILE {G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+set_property PROBES.FILE {G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+refresh_hw_device: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1873.168 ; gain = 47.766
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property PROBES.FILE {G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1879.027 ; gain = 0.742
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 20:12:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 20:12:59
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 20:13:37
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 20:13:37
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 20:13:41
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 20:13:41
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 20:13:46
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 20:13:46
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bB [get_hw_probes astar_gnps_i/findpath_flag_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 20:13:58
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 20:14:06
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property CONTROL.TRIGGER_POSITION 1 [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+set_property TRIGGER_COMPARE_VALUE eq1'bR [get_hw_probes astar_gnps_i/led0_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes astar_gnps_i/findpath_flag_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 20:14:52
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 20:15:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bB [get_hw_probes astar_gnps_i/findpath_flag_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 20:15:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 20:15:50
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property CONTROL.TRIGGER_POSITION 65500 [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 20:16:20
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 20:16:29
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.C_DATA_DEPTH {131072}] [get_ips ila_astar]
+generate_target all [get_files  G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_astar.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_astar'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_astar'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_astar'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_astar'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_astar'...
+export_ip_user_files -of_objects [get_files G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_astar.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_astar.xci] -directory G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property generate_synth_checkpoint true [get_files  {G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1.xci G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/closeram8.xci G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8.xci G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12.xci G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_astar.xci}]
+generate_target all [get_files  {G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1.xci G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/closeram8.xci G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8.xci G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12.xci G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_astar.xci}]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mapram1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mapram1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mapram1'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'mapram1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mapram1'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'closeram8'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'closeram8'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'closeram8'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'closeram8'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'closeram8'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'openram8'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'openram8'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'openram8'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'openram8'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'openram8'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'openram12'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'openram12'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'openram12'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'openram12'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'openram12'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_astar'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_astar'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_astar_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_astar'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_astar'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_astar'...
+generate_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1979.586 ; gain = 0.164
+catch { config_ip_cache -export [get_ips -all mapram1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP mapram1, cache-ID = 97748c8bb7393532; cache size = 22.029 MB.
+catch { config_ip_cache -export [get_ips -all closeram8] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP closeram8, cache-ID = 09154e28805ab294; cache size = 22.029 MB.
+catch { config_ip_cache -export [get_ips -all openram8] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP openram8, cache-ID = 174025545b0b5ac5; cache size = 22.029 MB.
+catch { config_ip_cache -export [get_ips -all openram12] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP openram12, cache-ID = 2407fc21304bf371; cache size = 22.029 MB.
+catch { config_ip_cache -export [get_ips -all ila_astar] }
+export_ip_user_files -of_objects [get_files G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/closeram8.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12.xci] -no_script -sync -force -quiet
+export_ip_user_files -of_objects [get_files G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_astar.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1.xci'
+create_ip_run [get_files -of_objects [get_fileset sources_1] G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/closeram8.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/closeram8.xci'
+create_ip_run [get_files -of_objects [get_fileset sources_1] G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8.xci'
+create_ip_run [get_files -of_objects [get_fileset sources_1] G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12.xci]
+INFO: [Vivado 12-3453] The given sub-design is up-to-date, no action was taken.  If a run is still desired, use the '-force' option for the file:'G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12.xci'
+create_ip_run [get_files -of_objects [get_fileset sources_1] G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_astar.xci]
+launch_runs -jobs 4 ila_astar_synth_1
+[Wed May 18 20:19:44 2022] Launched ila_astar_synth_1...
+Run output will be captured here: G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/ila_astar_synth_1/runme.log
+export_simulation -of_objects [get_files G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1.xci] -directory G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/closeram8.xci] -directory G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8.xci] -directory G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12.xci] -directory G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_simulation -of_objects [get_files G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_astar.xci] -directory G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/closeram8.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1.xci' is already up-to-date
+[Wed May 18 20:20:32 2022] Launched ila_astar_synth_1, synth_1...
+Run output will be captured here:
+ila_astar_synth_1: G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/ila_astar_synth_1/runme.log
+synth_1: G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1/runme.log
+[Wed May 18 20:20:32 2022] Launched impl_1...
+Run output will be captured here: G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/impl_1/runme.log
+set_property PROBES.FILE {G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:20 ; elapsed = 00:00:18 . Memory (MB): peak = 1992.746 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bB [get_hw_probes astar_gnps_i/led0 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+set_property CONTROL.TRIGGER_POSITION 10 [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes astar_gnps_i/findpath_flag_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bB [get_hw_probes astar_gnps_i/led0_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 20:32:48
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 20:32:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 20:33:04
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 20:33:08
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/closeram8.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1.xci' is already up-to-date
+[Wed May 18 20:35:38 2022] Launched synth_1...
+Run output will be captured here: G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1/runme.log
+[Wed May 18 20:35:38 2022] Launched impl_1...
+Run output will be captured here: G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/impl_1/runme.log
+set_property PROBES.FILE {G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2006.820 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 20:46:05
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 20:46:40
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property TRIGGER_COMPARE_VALUE eq1'bX [get_hw_probes astar_gnps_i/led0_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'bB [get_hw_probes astar_gnps_i/findpath_flag_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 20:47:24
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 20:47:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property CONTROL.TRIGGER_POSITION 131070 [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 20:47:46
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 20:47:48
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 20:47:53
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 20:47:55
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "100 / (_@_*1.0)"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "100 / (_@_*1.0)"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "100 / (_@_*1.0)"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "100 / (_@_*1.0)"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "100 / (_@_*1.0)"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+missing operand at _@_
+in expression "200 *1.0 / _@_"
+set_property -dict [list CONFIG.CLKOUT4_USED {false} CONFIG.CLKOUT5_USED {false} CONFIG.CLKOUT6_USED {false} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {100} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {100} CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {10} CONFIG.CLKOUT4_REQUESTED_OUT_FREQ {100} CONFIG.CLKOUT4_REQUESTED_PHASE {0} CONFIG.CLKOUT5_REQUESTED_OUT_FREQ {100} CONFIG.CLKOUT6_REQUESTED_OUT_FREQ {100} CONFIG.CLKOUT6_REQUESTED_PHASE {0} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT0_DIVIDE_F {10.000} CONFIG.MMCM_CLKOUT1_DIVIDE {10} CONFIG.MMCM_CLKOUT2_DIVIDE {100} CONFIG.MMCM_CLKOUT3_DIVIDE {1} CONFIG.MMCM_CLKOUT3_PHASE {0.000} CONFIG.MMCM_CLKOUT4_DIVIDE {1} CONFIG.MMCM_CLKOUT5_DIVIDE {1} CONFIG.MMCM_CLKOUT5_PHASE {0.000} CONFIG.NUM_OUT_CLKS {3} CONFIG.CLKOUT1_JITTER {112.316} CONFIG.CLKOUT2_JITTER {112.316} CONFIG.CLKOUT3_JITTER {178.053} CONFIG.CLKOUT4_JITTER {112.316} CONFIG.CLKOUT5_JITTER {112.316} CONFIG.CLKOUT6_JITTER {112.316}] [get_ips clk_wiz_0]
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'CLKOUT4_REQUESTED_PHASE' from '180' to '0' has been ignored for IP 'clk_wiz_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'CLKOUT5_REQUESTED_OUT_FREQ' from '50' to '100' has been ignored for IP 'clk_wiz_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'CLKOUT6_REQUESTED_OUT_FREQ' from '50' to '100' has been ignored for IP 'clk_wiz_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'CLKOUT6_REQUESTED_PHASE' from '180' to '0' has been ignored for IP 'clk_wiz_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_CLKOUT3_PHASE' from '180.000' to '0.000' has been ignored for IP 'clk_wiz_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_CLKOUT5_PHASE' from '180.000' to '0.000' has been ignored for IP 'clk_wiz_0'
+generate_target all [get_files  G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_0_synth_1
+launch_runs -jobs 4 clk_wiz_0_synth_1
+[Wed May 18 20:49:55 2022] Launched clk_wiz_0_synth_1...
+Run output will be captured here: G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.ip_user_files/sim_scripts -ip_user_files_dir G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.ip_user_files -ipstatic_source_dir G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/modelsim} {questa=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/questa} {riviera=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/riviera} {activehdl=G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/closeram8.xci' is already up-to-date
+INFO: [Vivado 12-4149] The synthesis checkpoint for IP 'G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1.xci' is already up-to-date
+[Wed May 18 20:50:59 2022] Launched synth_1...
+Run output will be captured here: G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/synth_1/runme.log
+[Wed May 18 20:50:59 2022] Launched impl_1...
+Run output will be captured here: G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/impl_1/runme.log
+set_property PROBES.FILE {G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.ltx} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.runs/impl_1/top_astargnps.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 2422.121 ; gain = 0.000
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-2302] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 21:00:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 21:00:23
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+set_property CONTROL.TRIGGER_POSITION 65536 [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 21:01:00
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 21:01:05
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2022-May-18 21:01:09
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7vx485t_0] -filter {CELL_NAME=~"astar_gnps_i/ila_astar_i"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2022-May-18 21:01:18
+INFO: [Labtools 27-3304] ILA Waveform data saved to file G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7vx485tffg1761-2
+Top: top_astargnps
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'source' was cancelled
+2 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+INFO: [Common 17-344] 'synth_design' was cancelled
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7vx485tffg1761-2
+Top: top_astargnps
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 2472.445 ; gain = 36.039
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_astargnps' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/top_astargnps.v:23]
+	Parameter CLK bound to: 28'b0101111101011110000100000000 
+	Parameter BPS bound to: 17'b11100001000000000 
+	Parameter MAP_ROW bound to: 8'b00010000 
+	Parameter MAP_COLUMN bound to: 8'b00010000 
+	Parameter MAP_EXP bound to: 8'b00000100 
+	Parameter START_ROW bound to: 8'b00000001 
+	Parameter START_COLUMN bound to: 8'b00000001 
+	Parameter END_ROW bound to: 8'b00001101 
+	Parameter END_COLUMN bound to: 8'b00001101 
+INFO: [Synth 8-6157] synthesizing module 'IBUFGDS' [D:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20866]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: FALSE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFGDS' (1#1) [D:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20866]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (2#1) [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/uart_rx.v:1]
+	Parameter CLK bound to: 28'b0101111101011110000100000000 
+	Parameter BPS bound to: 17'b11100001000000000 
+	Parameter BPS_CNT bound to: 28'b0000000000000000001101100100 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (3#1) [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/uart_rx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'astar_gnps' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1]
+	Parameter MAP_ROW bound to: 8'b00010000 
+	Parameter MAP_COLUMN bound to: 8'b00010000 
+	Parameter MAP_EXP bound to: 8'b00000100 
+	Parameter START_ROW bound to: 8'b00000001 
+	Parameter START_COLUMN bound to: 8'b00000001 
+	Parameter END_ROW bound to: 8'b00001101 
+	Parameter END_COLUMN bound to: 8'b00001101 
+	Parameter S0 bound to: 5'b00000 
+	Parameter S1 bound to: 5'b00001 
+	Parameter S2 bound to: 5'b00010 
+	Parameter S3 bound to: 5'b00011 
+	Parameter S4 bound to: 5'b00100 
+	Parameter S5 bound to: 5'b00101 
+	Parameter S6 bound to: 5'b00110 
+	Parameter S7 bound to: 5'b00111 
+	Parameter S8 bound to: 5'b01000 
+	Parameter S9 bound to: 5'b01001 
+	Parameter S10 bound to: 5'b01010 
+	Parameter S11 bound to: 5'b01011 
+	Parameter S12 bound to: 5'b01100 
+	Parameter S13 bound to: 5'b01101 
+	Parameter S14 bound to: 5'b01110 
+	Parameter S15 bound to: 5'b01111 
+	Parameter S16 bound to: 5'b10000 
+	Parameter S17 bound to: 5'b10001 
+	Parameter S18 bound to: 5'b10010 
+	Parameter S19 bound to: 5'b10011 
+	Parameter S20 bound to: 5'b10100 
+	Parameter S21 bound to: 5'b10101 
+	Parameter S22 bound to: 5'b10110 
+INFO: [Synth 8-6157] synthesizing module 'mapram1' [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/mapram1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mapram1' (4#1) [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/mapram1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'closeram8' [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/closeram8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'closeram8' (5#1) [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/closeram8_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'openram8' [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/openram8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'openram8' (6#1) [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/openram8_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'openram12' [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/openram12_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'openram12' (7#1) [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/openram12_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:2705]
+INFO: [Synth 8-6157] synthesizing module 'ila_astar' [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/ila_astar_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_astar' (8#1) [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/ila_astar_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_astar_i'. This will prevent further optimization [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:2705]
+INFO: [Synth 8-6155] done synthesizing module 'astar_gnps' (9#1) [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/uart_tx.v:1]
+	Parameter CLK bound to: 28'b0101111101011110000100000000 
+	Parameter BPS bound to: 17'b11100001000000000 
+	Parameter BPS_CNT bound to: 28'b0000000000000000001101100100 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (10#1) [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/uart_tx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top_astargnps' (11#1) [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/top_astargnps.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 2582.488 ; gain = 146.082
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 2582.488 ; gain = 146.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 2582.488 ; gain = 146.082
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clk_wiz_0_i'
+INFO: [Project 1-454] Reading design checkpoint 'g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1.dcp' for cell 'astar_gnps_i/map_i'
+INFO: [Project 1-454] Reading design checkpoint 'g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/closeram8.dcp' for cell 'astar_gnps_i/closelist_childy_i'
+INFO: [Project 1-454] Reading design checkpoint 'g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8.dcp' for cell 'astar_gnps_i/openlist_parenty_i'
+INFO: [Project 1-454] Reading design checkpoint 'g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12.dcp' for cell 'astar_gnps_i/openlist_g1_i'
+INFO: [Project 1-454] Reading design checkpoint 'g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_astar.dcp' for cell 'astar_gnps_i/ila_astar_i'
+INFO: [Netlist 29-17] Analyzing 114 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, clk_wiz_0_i/inst/clkin1_ibufg, from the path connected to top-level port: sys_clk_p 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'clk_wiz_0_i/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0_i/inst'
+Finished Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0_i/inst'
+Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0_i/inst'
+Finished Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0_i/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_astargnps_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_astargnps_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_v6_2/constraints/ila.xdc] for cell 'astar_gnps_i/ila_astar_i/inst'
+Finished Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_v6_2/constraints/ila.xdc] for cell 'astar_gnps_i/ila_astar_i/inst'
+INFO: [Timing 38-2] Deriving generated clocks
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2872.473 ; gain = 0.000
+Parsing XDC File [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/constrs_1/new/io_plan.xdc]
+Finished Parsing XDC File [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/constrs_1/new/io_plan.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/constrs_1/new/io_plan.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_astargnps_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_astargnps_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2872.473 ; gain = 0.000
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2872.473 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 49 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 48 instances
+  IBUFGDS => IBUFDS: 1 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:47 ; elapsed = 00:01:22 . Memory (MB): peak = 3296.969 ; gain = 860.562
+40 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:47 ; elapsed = 00:01:23 . Memory (MB): peak = 3296.969 ; gain = 860.562
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3299.777 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_astargnps' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/top_astargnps.v:23]
+	Parameter CLK bound to: 28'b0101111101011110000100000000 
+	Parameter BPS bound to: 17'b11100001000000000 
+	Parameter MAP_ROW bound to: 8'b01000000 
+	Parameter MAP_COLUMN bound to: 8'b01000000 
+	Parameter MAP_EXP bound to: 8'b00000110 
+	Parameter START_ROW bound to: 8'b00000001 
+	Parameter START_COLUMN bound to: 8'b00000001 
+	Parameter END_ROW bound to: 8'b00111101 
+	Parameter END_COLUMN bound to: 8'b00111101 
+INFO: [Synth 8-6157] synthesizing module 'IBUFGDS' [D:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20866]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: FALSE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFGDS' (1#1) [D:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:20866]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (2#1) [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/uart_rx.v:1]
+	Parameter CLK bound to: 28'b0101111101011110000100000000 
+	Parameter BPS bound to: 17'b11100001000000000 
+	Parameter BPS_CNT bound to: 28'b0000000000000000001101100100 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (3#1) [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/uart_rx.v:1]
+INFO: [Synth 8-6157] synthesizing module 'astar_gnps' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1]
+	Parameter MAP_ROW bound to: 8'b01000000 
+	Parameter MAP_COLUMN bound to: 8'b01000000 
+	Parameter MAP_EXP bound to: 8'b00000110 
+	Parameter START_ROW bound to: 8'b00000001 
+	Parameter START_COLUMN bound to: 8'b00000001 
+	Parameter END_ROW bound to: 8'b00111101 
+	Parameter END_COLUMN bound to: 8'b00111101 
+	Parameter S0 bound to: 5'b00000 
+	Parameter S1 bound to: 5'b00001 
+	Parameter S2 bound to: 5'b00010 
+	Parameter S3 bound to: 5'b00011 
+	Parameter S4 bound to: 5'b00100 
+	Parameter S5 bound to: 5'b00101 
+	Parameter S6 bound to: 5'b00110 
+	Parameter S7 bound to: 5'b00111 
+	Parameter S8 bound to: 5'b01000 
+	Parameter S9 bound to: 5'b01001 
+	Parameter S10 bound to: 5'b01010 
+	Parameter S11 bound to: 5'b01011 
+	Parameter S12 bound to: 5'b01100 
+	Parameter S13 bound to: 5'b01101 
+	Parameter S14 bound to: 5'b01110 
+	Parameter S15 bound to: 5'b01111 
+	Parameter S16 bound to: 5'b10000 
+	Parameter S17 bound to: 5'b10001 
+	Parameter S18 bound to: 5'b10010 
+	Parameter S19 bound to: 5'b10011 
+	Parameter S20 bound to: 5'b10100 
+	Parameter S21 bound to: 5'b10101 
+	Parameter S22 bound to: 5'b10110 
+INFO: [Synth 8-6157] synthesizing module 'mapram1' [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/mapram1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mapram1' (4#1) [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/mapram1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'closeram8' [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/closeram8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'closeram8' (5#1) [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/closeram8_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'openram8' [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/openram8_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'openram8' (6#1) [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/openram8_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'openram12' [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/openram12_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'openram12' (7#1) [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/openram12_stub.v:6]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:2705]
+INFO: [Synth 8-6157] synthesizing module 'ila_astar' [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/ila_astar_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_astar' (8#1) [G:/01Astar/Asatr64x64/top_astargnps/.Xil/Vivado-13428-DESKTOP-A9E5TQ0/realtime/ila_astar_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_astar_i'. This will prevent further optimization [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:2705]
+INFO: [Synth 8-6155] done synthesizing module 'astar_gnps' (9#1) [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/astar_gnps.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/uart_tx.v:1]
+	Parameter CLK bound to: 28'b0101111101011110000100000000 
+	Parameter BPS bound to: 17'b11100001000000000 
+	Parameter BPS_CNT bound to: 28'b0000000000000000001101100100 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (10#1) [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/uart_tx.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top_astargnps' (11#1) [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/new/top_astargnps.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 3314.273 ; gain = 14.496
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 3315.324 ; gain = 15.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 3315.324 ; gain = 15.547
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'clk_wiz_0_i'
+INFO: [Project 1-454] Reading design checkpoint 'g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/mapram1_1/mapram1.dcp' for cell 'astar_gnps_i/map_i'
+INFO: [Project 1-454] Reading design checkpoint 'g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/closeram8/closeram8.dcp' for cell 'astar_gnps_i/closelist_childy_i'
+INFO: [Project 1-454] Reading design checkpoint 'g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram8/openram8.dcp' for cell 'astar_gnps_i/openlist_parenty_i'
+INFO: [Project 1-454] Reading design checkpoint 'g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/openram12/openram12.dcp' for cell 'astar_gnps_i/openlist_g1_i'
+INFO: [Project 1-454] Reading design checkpoint 'g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_astar.dcp' for cell 'astar_gnps_i/ila_astar_i'
+INFO: [Netlist 29-17] Analyzing 114 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-35] Removing redundant IBUF, clk_wiz_0_i/inst/clkin1_ibufg, from the path connected to top-level port: sys_clk_p 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'clk_wiz_0_i/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0_i/inst'
+Finished Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_wiz_0_i/inst'
+Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0_i/inst'
+Finished Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_wiz_0_i/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_astargnps_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_astargnps_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_v6_2/constraints/ila.xdc] for cell 'astar_gnps_i/ila_astar_i/inst'
+Finished Parsing XDC File [g:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/sources_1/ip/ila_astar/ila_v6_2/constraints/ila.xdc] for cell 'astar_gnps_i/ila_astar_i/inst'
+INFO: [Timing 38-2] Deriving generated clocks
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3341.402 ; gain = 0.000
+Parsing XDC File [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/constrs_1/new/io_plan.xdc]
+Finished Parsing XDC File [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/constrs_1/new/io_plan.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.srcs/constrs_1/new/io_plan.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_astargnps_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_astargnps_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3341.402 ; gain = 0.000
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:24 . Memory (MB): peak = 3543.379 ; gain = 243.602
+set_property IOSTANDARD LVCMOS18 [get_ports [list led0]]
+save_constraints
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.139 . Memory (MB): peak = 5115.367 ; gain = 0.000
+save_constraints: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 5115.367 ; gain = 0.000
+save_wave_config {G:/01Astar/Asatr64x64/top_astargnps/top_astargnps.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 18 21:28:44 2022...

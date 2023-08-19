@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May 16 10:50:12 2022
+# Process ID: 12828
+# Current directory: G:/01Astar/Asatr16x16/top_astargnps
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6500 G:\01Astar\Asatr16x16\top_astargnps\top_astargnps.xpr
+# Log file: G:/01Astar/Asatr16x16/top_astargnps/vivado.log
+# Journal file: G:/01Astar/Asatr16x16/top_astargnps\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/01Astar/Asatr16x16/top_astargnps/top_astargnps.xpr
+INFO: [Project 1-313] Project file moved from 'G:/00Astar/Asatr16x16/top_astargnps' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:19 . Memory (MB): peak = 810.344 ; gain = 197.832
+update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 16 11:16:30 2022...

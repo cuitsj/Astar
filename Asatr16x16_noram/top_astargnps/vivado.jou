@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May 16 10:50:12 2022
+# Process ID: 12828
+# Current directory: G:/01Astar/Asatr16x16/top_astargnps
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6500 G:\01Astar\Asatr16x16\top_astargnps\top_astargnps.xpr
+# Log file: G:/01Astar/Asatr16x16/top_astargnps/vivado.log
+# Journal file: G:/01Astar/Asatr16x16/top_astargnps\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project G:/01Astar/Asatr16x16/top_astargnps/top_astargnps.xpr
+update_compile_order -fileset sources_1
